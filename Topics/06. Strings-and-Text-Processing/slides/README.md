@@ -9,10 +9,10 @@
   <a href="https://telerikacademy.com" class="signature-link">https://telerikacademy.com</a>
 </div>
 
-<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic00.png" style="top:53.38%; left:72.98%; width:30.48%; z-index:-1" /> -->
-<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic01.png" style="top:10.46%; left:-0.12%; width:32.73%; z-index:-1" /> -->
-<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic02.png" style="top:54.28%; left:50.92%; width:17.08%; z-index:-1" /> -->
-<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic03.png" style="top:4.73%; left:90.36%; width:14.10%; z-index:-1" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic00.png" style="top:53.38%; left:72.98%; width:30.48%; z-index:-1" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic01.png" style="top:10.46%; left:-0.12%; width:32.73%; z-index:-1" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic02.png" style="top:54.28%; left:50.92%; width:17.08%; z-index:-1" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic03.png" style="top:4.73%; left:90.36%; width:14.10%; z-index:-1" /> -->
 
 <!-- section start -->
 
@@ -43,7 +43,7 @@
 <!-- # What Is String?
 ##  Sequences of Characters -->
 
-<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic06.png" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic06.png" /> -->
 
 # What Is String?
 - Strings are sequences of characters
@@ -58,7 +58,7 @@ string s = "Hello, C#";
 |:--|:--|:--|:--|:--|:--|:--|:--|:--|
 | H | e | l | l | o | , |   | C | # |
 
-<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic07.png" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic07.png" /> -->
 
 # The `System.String` Class
 - Strings are represented by `System.String` objects in .NET Framework
@@ -84,7 +84,7 @@ int len = s.Length; // len = 6char ch = s[1]; // ch = 'e'
 |:-----------|:--|:--|:--|:--|:--|:--|
 | str[index] | H | e | l | l | o | ! |
 
-<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic08.png"/> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic08.png"/> -->
 
 <!-- attr: { showInPresentation: true} -->
 <!-- # Strings: Examples -->
@@ -105,12 +105,12 @@ static void Main()
 }
 ```
 
-<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic09.png" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic09.png" /> -->
 
 <!-- attr: { class: 'slide-section', showInPresentation: true} -->
 <!-- # Printing the Characters of a String -->
 ## [Demo]()
-<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic10.png"/> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic10.png"/> -->
 
 # Declaring Strings
 - Several ways of declaring string variables:
@@ -125,7 +125,7 @@ static void Main()
 
   - The above three declarations are equivalent
 
-<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic12.png" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic12.png" /> -->
 
 # Creating Strings
 
@@ -135,7 +135,7 @@ static void Main()
   - Assigning the value of another string variable
   - Assigning the result of operation of type string
 
-<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic13.png"/> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic13.png"/> -->
 
 <!-- attr: {showInPresentation: true, style: 'font-size:0.8em'} -->
 # Creating Strings
@@ -187,7 +187,7 @@ Console.WriteLine("Welcome to our party!");
 <!-- attr: {class: 'slide-section', showInPresentation: true} -->
 <!-- #  Reading and Printing Strings -->
 ## [Demo]()
-<!-- <img class="slide-image" src="\imgs\pic14.png"/> -->
+<!-- <img class="slide-image" src="imgs/pic14.png"/> -->
 
 <!-- section start -->
 
@@ -195,8 +195,8 @@ Console.WriteLine("Welcome to our party!");
 <!-- # Manipulating Strings
 ## Comparing, Concatenating, Searching, Extracting Substrings, Splitting -->
 
-<!-- <img class="slide-image"  showInPresentation="true" src="\imgs\pic15.png" /> -->
-<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic16.png" /> -->
+<!-- <img class="slide-image"  showInPresentation="true" src="imgs/pic15.png" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic16.png" /> -->
 
 <!-- attr: {style: 'font-size: 0.75em; line-height: 0.75em'} -->
 # Comparing Strings
@@ -262,7 +262,7 @@ Console.WriteLine("First town: {0}", bestTown);
 <!-- attr: {class: 'slide-section', showInPresentation: true} -->
 <!-- #  Comparing Strings -->
 ## [Demo]()
-<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic17.png" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic17.png" /> -->
 
 <!-- attr: {style: 'font-size: 0.85em'} -->
 # Concatenating Strings
@@ -313,7 +313,7 @@ Console.WriteLine(nameAndAge);
 <!-- attr: {class: 'slide-section', showInPresentation: true} -->
 <!-- #  Concatenating String -->
 ## [Demo]()
-<!-- <img class="slide-image" src="\imgs\pic18.png" /> -->
+<!-- <img class="slide-image" src="imgs/pic18.png" /> -->
 
 # Searching in Strings
 
@@ -337,7 +337,7 @@ Console.WriteLine(nameAndAge);
     string#LastIndexOf(string)
     ```
 
-<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic19.png" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic19.png" /> -->
 
 <!-- attr: {showInPresentation: true} -->
 <!-- # Searching in Strings: _Example_ -->
@@ -359,7 +359,7 @@ index = str.IndexOf("r", 8); // index = 18
 <!-- attr: {class: 'slide-section', showInPresentation: true} -->
 <!-- #  Searching in Strings -->
 ## [Demo]()
-<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic20.png" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic20.png" /> -->
 
 # Extracting Substrings
 - Extracting substrings
@@ -383,7 +383,7 @@ index = str.IndexOf("r", 8); // index = 18
 <!-- attr: {class:'slide-section', showInPresentation: true} -->
 <!-- #  Extracting from Strings -->
 ## [Demo]()
-<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic21.png" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic21.png" /> -->
 
 # Splitting Strings
 - To split a string by given separator(s) use the following method:
@@ -405,19 +405,19 @@ foreach (string beer in beers)
 }
 ```
 
-<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic22.png" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic22.png" /> -->
 
 <!-- attr: {class: 'slide-section',showInPresentation: true} -->
 <!-- #  Splitting Strings -->
 ## [Demo]()
-<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic23.png" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic23.png" /> -->
 
 <!-- section start -->
 
 <!-- attr: {class: 'slide-section' ,showInPresentation: true} -->
 <!-- # Other String Operations
 ## Replacing, Removing, etc..-->
-<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic24.png"/> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic24.png"/> -->
 
 <!-- attr: {style: 'font-size: 0.9em'} -->
 # Replacing and Deleting Substrings
@@ -462,7 +462,7 @@ string upperAlpha = alpha.ToUpper(); // ABCDEFG
 Console.WriteLine(upperAlpha);
 ```
 
-<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic25.png" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic25.png" /> -->
 
 <!-- attr: {class: 'slide-section', showInPresentation: true} -->
 <!-- #  Changing Character Casing -->
@@ -532,7 +532,7 @@ public static string DuplicateChar(char ch, int count)
 <!-- attr: {class: 'slide-section', showInPresentation: true} -->
 <!-- # Slow Character Duplication -->
 ## [Demo]()
-<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic28.png"/> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic28.png"/> -->
 
 <!-- section start -->
 
@@ -631,16 +631,16 @@ public static string ExtractCapitals(string text)
 <!-- attr: {class: 'slide-section', showInPresentation: true} -->
 <!-- # Using `StringBuilder` -->
 ## [Demo]()
-<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic30.png" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic30.png" /> -->
 
 <!-- section start -->
 
 <!-- attr: {class: 'slide-section', showInPresentation: true} -->
 <!-- # Formatting Strings
 ## Using ToString() and String.Format() -->
-<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic31.png"/> -->
-<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic32.png"/> -->
-<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic33.png"/> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic31.png"/> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic32.png"/> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic33.png"/> -->
 
 <!-- attr: { style: 'font-size: 0.9em'} -->
 # Method ToString()
@@ -788,7 +788,7 @@ DateTime date = DateTime.ParseExact(dateStr, "dd.MM.yyyy", CultureInfo.Invariant
 <!-- attr: {class: 'slide-section', showInPresentation: true} -->
 <!-- # Formatting Strings -->
 ## [Demo]()
-<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic34.png" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic34.png" /> -->
 
 <!-- section start -->
 
@@ -804,7 +804,7 @@ DateTime date = DateTime.ParseExact(dateStr, "dd.MM.yyyy", CultureInfo.Invariant
 - Objects can be converted to strings and can be formatted in different styles (using `ToString()` method)
 - Strings can be constructed by using placeholders and formatting strings (`String.Format(…)`)
 
-<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic35.png" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic35.png" /> -->
 
 <!-- section start -->
 
@@ -824,7 +824,7 @@ DateTime date = DateTime.ParseExact(dateStr, "dd.MM.yyyy", CultureInfo.Invariant
   - Telerik Software Academy Forums
     - forums.academy.telerik.com
 
-<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic36.png" /> -->
-<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic37.png" /> -->
-<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic38.png" /> -->
-<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic39.png" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic36.png" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic37.png" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic38.png" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic39.png" /> -->
