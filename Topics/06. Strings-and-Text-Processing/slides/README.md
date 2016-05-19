@@ -4,15 +4,15 @@
 ## Processing and Manipulating Text Information
 
 <div class="signature">
-	<p class="signature-course">C# Advanced</p>
-	<p class="signature-initiative">Telerik Software Academy</p>
-	<a href="https://telerikacademy.com" class="signature-link">https://telerikacademy.com</a>
+  <p class="signature-course">C# Advanced</p>
+  <p class="signature-initiative">Telerik Software Academy</p>
+  <a href="https://telerikacademy.com" class="signature-link">https://telerikacademy.com</a>
 </div>
 
-<img class="slide-image" src="\imgs\pic00.png" style="top:53.38%; left:72.98%; width:30.48%; z-index:-1" />
-<img class="slide-image" src="\imgs\pic01.png" style="top:10.46%; left:-0.12%; width:32.73%; z-index:-1" />
-<img class="slide-image" src="\imgs\pic02.png" style="top:54.28%; left:50.92%; width:17.08%; z-index:-1" />
-<img class="slide-image" src="\imgs\pic03.png" style="top:4.73%; left:90.36%; width:14.10%; z-index:-1" />
+<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic00.png" style="top:53.38%; left:72.98%; width:30.48%; z-index:-1" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic01.png" style="top:10.46%; left:-0.12%; width:32.73%; z-index:-1" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic02.png" style="top:54.28%; left:50.92%; width:17.08%; z-index:-1" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic03.png" style="top:4.73%; left:90.36%; width:14.10%; z-index:-1" /> -->
 
 <!-- section start -->
 
@@ -24,6 +24,10 @@
   - Comparing, Concatenating, Searching, Extracting Substrings, Splitting
 - Other String Operations
   - Replacing Substrings, Deleting Substrings, Changing Character Casing, Trimming
+
+<!-- attr: {showInPresentation: true} -->
+<!-- # Table of Contents -->
+
 - Building and Modifying Strings
   - Why the `+` Operator is Slow?
   - Using the `StringBuilder` Class
@@ -35,9 +39,11 @@
 
 <!-- section start -->
 
-# What Is String?
-##	Sequences of Characters
-<img class="slide-image" src="\imgs\pic06.png" />
+<!-- attr: {class:'slide-section', showInPresentation: true} -->
+<!-- # What Is String?
+##  Sequences of Characters -->
+
+<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic06.png" /> -->
 
 # What Is String?
 - Strings are sequences of characters
@@ -52,7 +58,7 @@ string s = "Hello, C#";
 |:--|:--|:--|:--|:--|:--|:--|:--|:--|
 | H | e | l | l | o | , |   | C | # |
 
-<img class="slide-image" src="\imgs\pic07.png" />
+<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic07.png" /> -->
 
 # The `System.String` Class
 - Strings are represented by `System.String` objects in .NET Framework
@@ -60,6 +66,10 @@ string s = "Hello, C#";
   - Strings use **Unicode** to support multiple languages and alphabets
 - Strings are stored in the dynamic memory (**managed heap**)
 - `System.String` is reference type
+
+<!-- attr: {showInPresentation: true} -->
+<!-- # The `System.String` Class -->
+
 - String objects are like arrays of characters (`char[]`)
   - Have fixed length (`String.Length`)
   - Elements can be accessed directly by index
@@ -74,34 +84,38 @@ int len = s.Length; // len = 6char ch = s[1]; // ch = 'e'
 |:-----------|:--|:--|:--|:--|:--|:--|
 | str[index] | H | e | l | l | o | ! |
 
-<img class="slide-image" src="\imgs\pic08.png"/>
+<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic08.png"/> -->
 
--	_Example_: Printing the characters of a string with a `for` loop
+<!-- attr: { showInPresentation: true} -->
+<!-- # Strings: Examples -->
+
+-  _Example_: Printing the characters of a string with a `for` loop
 
 ```cs
 static void Main()
 {
-    string greeting = "Stand up, stand up, Balkan Superman.";
-    Console.WriteLine("greeting = \"{0}\"", greeting);
-    Console.WriteLine("greeting.Length = {0}", greeting.Length);
+  string greeting = "Stand up, stand up, Balkan Superman.";
+  Console.WriteLine("greeting = \"{0}\"", greeting);
+  Console.WriteLine("greeting.Length = {0}", greeting.Length);
 
-		for (int i = 0; i < greeting.Length; i++)
-    {
-        Console.WriteLine("greeting[{0}] = {1}", i, greeting[i]);
-    }
+  for (int i = 0; i < greeting.Length; i++)
+  {
+    Console.WriteLine("greeting[{0}] = {1}", i, greeting[i]);
+  }
 }
 ```
 
-<img class="slide-image" src="\imgs\pic09.png" />
+<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic09.png" /> -->
 
-# Printing the Characters of a String
+<!-- attr: { class: 'slide-section', showInPresentation: true} -->
+<!-- # Printing the Characters of a String -->
 ## [Demo]()
-<img class="slide-image" src="\imgs\pic10.png"/>
+<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic10.png"/> -->
 
 # Declaring Strings
 - Several ways of declaring string variables:
   - Using the C# keyword `string`
-  - Using the .NET's  fully qualified class name `System.String`
+  - Using the .NET's fully qualified class name `System.String`
 
   ```cs
   string str1;
@@ -111,7 +125,7 @@ static void Main()
 
   - The above three declarations are equivalent
 
-<img class="slide-image" src="\imgs\pic12.png" />
+<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic12.png" /> -->
 
 # Creating Strings
 
@@ -120,10 +134,14 @@ static void Main()
   - Assigning a string literal to the string variable
   - Assigning the value of another string variable
   - Assigning the result of operation of type string
-<img class="slide-image" src="\imgs\pic13.png"/>
+
+<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic13.png"/> -->
+
+<!-- attr: {showInPresentation: true, style: 'font-size:0.8em'} -->
+# Creating Strings
 
 - **Uninitialized** variables has value of `null`
-	-	When their are local variables, they cannot be used
+  -  When their are local variables, they cannot be used
 
 ```cs
 string s; // s is equal to null
@@ -148,6 +166,7 @@ string s = 42.ToString();
 ```
 
 # Reading and Printing Strings
+
 - Reading strings from the console
   - Use the method `Console.ReadLine()`
 
@@ -165,34 +184,36 @@ Console.Write("Hello, {0}! ", name);
 Console.WriteLine("Welcome to our party!");
 ```
 
+<!-- attr: {class: 'slide-section', showInPresentation: true} -->
+<!-- #  Reading and Printing Strings -->
 ## [Demo]()
-<img class="slide-image" src="\imgs\pic14.png"/>
+<!-- <img class="slide-image" src="\imgs\pic14.png"/> -->
 
 <!-- section start -->
 
-# Manipulating Strings
-## Comparing, Concatenating, Searching, Extracting Substrings, Splitting
+<!-- attr: {class: 'slide-section', showInPresentation: true} -->
+<!-- # Manipulating Strings
+## Comparing, Concatenating, Searching, Extracting Substrings, Splitting -->
 
-<img class="slide-image" src="\imgs\pic15.png" />
-<img class="slide-image" src="\imgs\pic16.png" />
+<!-- <img class="slide-image"  showInPresentation="true" src="\imgs\pic15.png" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic16.png" /> -->
 
+<!-- attr: {style: 'font-size: 0.75em; line-height: 0.75em'} -->
 # Comparing Strings
+
 - Several ways to compare two strings:
   - Dictionary-based string comparison
-	- **Case-insensitive**
+  - **Case-insensitive**
 
-```cs
-int result = string.Compare(str1, str2, true);
-// result == 0 if str1 equals str2
-// result < 0 if str1 is before str2
-// result > 0 if str1 is after str2
-```
+    ```cs
+    int result = string.Compare(str1, str2, true);
+    ```
 
-	- **Case-sensitive**
+  - **Case-sensitive**
 
-```cs
-string.Compare(str1, str2, false);
-```
+    ```cs
+    string.Compare(str1, str2, false);
+    ```
 
 | Result | When                                     |
 | ------ | ---------------------------------------- |
@@ -200,8 +221,11 @@ string.Compare(str1, str2, false);
 | < 0    | str1 is is before str2 lexicographically |   
 | > 0    | str1 is is after str2 lexicographically  |   
 
+<!-- attr: { showInPresentation: true} -->
+<!-- # Comparing Strings -->
+
 - Equality checking by operator **==**
-	-	Always returns `true` or `false`
+  -  Always returns `true` or `false`
   - Performs case-sensitive compare
 
 ```cs
@@ -215,10 +239,13 @@ bool areStringsEqual = (str1 == str2);
 bool areStringsEqual = str1.Equals(str2));
 ```
 
+<!-- attr: {showInPresentation: true} -->
+<!-- # Comparing Strings: _Example_ -->
+
 - Finding the first string in a **lexicographical order** from a given list of strings:
 
 ```cs
-string[] towns = {"Sofia", "Varna", "Plovdiv", "Pleven", "Bourgas", "Rousse", "Yambol"};
+string[] towns = {"Sofia", "Varna", "Burgas", "Plovdiv", "Pleven",  "Rousse", "Yambol"};
 string bestTown = towns[0];
 
 foreach (string town in towns)
@@ -232,10 +259,14 @@ foreach (string town in towns)
 Console.WriteLine("First town: {0}", bestTown);
 ```
 
+<!-- attr: {class: 'slide-section', showInPresentation: true} -->
+<!-- #  Comparing Strings -->
 ## [Demo]()
-<img class="slide-image" src="\imgs\pic17.png" />
+<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic17.png" /> -->
 
+<!-- attr: {style: 'font-size: 0.85em'} -->
 # Concatenating Strings
+
 - There are two ways to combine strings:
   - Using the `Concat()` method
 
@@ -258,7 +289,10 @@ int age = 22;
 string s = name + " " + age; // &rarr; "Peter 22"
 ```
 
--	_Example:_ concatenating Strings
+<!-- attr: {showInPresentation: true} -->
+<!-- # Concatenating Strings: _Example_ -->
+
+-  _Example:_ concatenating strings
 
 ```cs
 string firstName = "Telerik";
@@ -270,41 +304,45 @@ Console.WriteLine(fullName);
 
 int age = 5;
 
-string nameAndAge = "Name: " + fullName +
-    								"\nAge: " + age;
+string nameAndAge = "Name: " + fullName + "\nAge: " + age;
 Console.WriteLine(nameAndAge);
 // Name: Telerik Academy
 // Age: 5
 ```
 
+<!-- attr: {class: 'slide-section', showInPresentation: true} -->
+<!-- #  Concatenating String -->
 ## [Demo]()
-<img class="slide-image" src="\imgs\pic18.png" />
+<!-- <img class="slide-image" src="\imgs\pic18.png" /> -->
 
 # Searching in Strings
 
 - Finding a character or substring within given string
+  - Case sensitive
   - First occurrence
-	-	Case sensitive
 
-```cs
-String#IndexOf(string str)
-```
+    ```cs
+    String#IndexOf(string str)
+    ```
 
   - First occurrence starting at given position
 
-```cs
-string#IndexOf(string str, int startIndex)
-```
+    ```cs
+    string#IndexOf(string str, int startIndex)
+    ```
 
   - Last occurrence
 
-```cs
-string#LastIndexOf(string)
-```
+    ```cs
+    string#LastIndexOf(string)
+    ```
 
-<img class="slide-image" src="\imgs\pic19.png" />
+<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic19.png" /> -->
 
--	_Example:_ searching in strings
+<!-- attr: {showInPresentation: true} -->
+<!-- # Searching in Strings: _Example_ -->
+
+-  _Example:_ searching in strings
 
 ```cs
 string str = "C# Programming Course";
@@ -318,30 +356,34 @@ index = str.IndexOf("r", 5); // index = 7
 index = str.IndexOf("r", 8); // index = 18
 ```
 
+<!-- attr: {class: 'slide-section', showInPresentation: true} -->
+<!-- #  Searching in Strings -->
 ## [Demo]()
-<img class="slide-image" src="\imgs\pic20.png" />
+<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic20.png" /> -->
 
 # Extracting Substrings
 - Extracting substrings
   - `string#Substring(int startIndex, int length)`
 
-```cs
-string filename = @"C:\Pics\Rila2009.jpg";
-string name = filename.Substring(8, 8);
-// name is Rila2009
-```
+    ```cs
+    string filename = @"C:\Pics\Rila2009.jpg";
+    string name = filename.Substring(8, 8);
+    // name is Rila2009
+    ```
 
-  - **str.Substring(int startIndex)**
+  - `str.Substring(int startIndex)`
 
-```cs
-string filename = @"C:\Pics\Summer2009.jpg";
-int index = filename.LastIndexOf(@"\");
-string nameAndExtension = filename.Substring(index + 1);
-// nameAndExtension is Summer2009.jpg
-```
+    ```cs
+    string filename = @"C:\Pics\Summer2009.jpg";
+    int index = filename.LastIndexOf(@"\");
+    string nameAndExtension = filename.Substring(index + 1);
+    // nameAndExtension is Summer2009.jpg
+    ```
 
+<!-- attr: {class:'slide-section', showInPresentation: true} -->
+<!-- #  Extracting from Strings -->
 ## [Demo]()
-<img class="slide-image" src="\imgs\pic21.png" />
+<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic21.png" /> -->
 
 # Splitting Strings
 - To split a string by given separator(s) use the following method:
@@ -353,9 +395,8 @@ string[] string#Split(params char[])
 - _Example_ splitting by comma:
 
 ```cs
-string listOfBeers = "Amstel, Zagorka, Burgasko Tuborg, Becks.";
-string[] beers =
-    listOfBeers.Split(' ', ',', '.');
+string listOfBeers = "Amstel, Zagorka, Burgasko, Tuborg, Becks.";
+string[] beers = listOfBeers.Split(' ', ',', '.');
 
 Console.WriteLine("Available beers are:");
 foreach (string beer in beers)
@@ -364,18 +405,24 @@ foreach (string beer in beers)
 }
 ```
 
-<img class="slide-image" src="\imgs\pic22.png" />
+<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic22.png" /> -->
 
+<!-- attr: {class: 'slide-section',showInPresentation: true} -->
+<!-- #  Splitting Strings -->
 ## [Demo]()
-<img class="slide-image" src="\imgs\pic23.png" />
+<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic23.png" /> -->
 
 <!-- section start -->
 
-# Other String Operations
-<img class="slide-image" src="\imgs\pic24.png"/>
+<!-- attr: {class: 'slide-section' ,showInPresentation: true} -->
+<!-- # Other String Operations
+## Replacing, Removing, etc..-->
+<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic24.png"/> -->
 
+<!-- attr: {style: 'font-size: 0.9em'} -->
 # Replacing and Deleting Substrings
-- `string#Replace(string, string )` – replaces all occurrences of the first string with the second string
+- `string#Replace(string, string )`
+  - Replaces all occurrences of the first string with the second string
   - The result is new string (strings are immutable)
 
 ```cs
@@ -384,13 +431,18 @@ string replaced = cocktail.Replace("+", "and");
 // Vodka and Martini and Cherry
 ```
 
-- `string#Remove(index, length)` – deletes part of a string and produces new string as result
+- `string#Remove(index, length)`
+  - Deletes part of a string and produces new string as result
 
 ```cs
 string price = "$ 1234567";
 string lowPrice = price.Remove(2, 3);
 // $ 4567
 ```
+
+<!-- attr: {class: 'slide-section', showInPresentation: true} -->
+<!-- #  Deleting and Replacing Strings -->
+##  [Demo]()
 
 # Changing Character Casing
 
@@ -410,8 +462,13 @@ string upperAlpha = alpha.ToUpper(); // ABCDEFG
 Console.WriteLine(upperAlpha);
 ```
 
-<img class="slide-image" src="\imgs\pic25.png" />
+<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic25.png" /> -->
 
+<!-- attr: {class: 'slide-section', showInPresentation: true} -->
+<!-- #  Changing Character Casing -->
+##  [Demo]()
+
+<!-- attr: {style: 'font-size: 0.85em'} -->
 # Trimming White Space
 
 - Using `string#Trim()`
@@ -437,28 +494,34 @@ string s = "   C#   ";
 string clean = s.TrimStart(); // clean = "C#   "
 ```
 
+<!-- attr: {class: 'slide-section',showInPresentation: true} -->
+<!-- #  Trimming Whitespace -->
 ## [Demo]()
 
 <!-- section start -->
 
-# Building and Modifying Strings
-## Using the StringBuilder Class
+<!-- section start -->
+<!-- attr: {class: 'slide-section', showInPresentation: true} -->
+<!-- # Building and Modifying Strings
+## Using the `StringBuilder` Class -->
 
-# Constructing Strings
+<!-- attr: {hasScriptWrapper: true} -->
+# How are Strings Constructed?
 
 - Strings are **immutable**!
   - `Concat()`, `Replace()`, `Trim()`, ... return **new strings**, do not modify the old one
 - Do not use `+` for strings in a loop!
   - It runs very, very inefficiently!
+  - _Example:_
 
 ```cs
 public static string DuplicateChar(char ch, int count)
 {
     string result = "";
     for (int i=0; i<count; i++)
-		{
+    {
         result += ch;
-		}
+    }
 
     return result;
 }
@@ -466,19 +529,26 @@ public static string DuplicateChar(char ch, int count)
 
 <div class="fragment balloon" style="top:72%; left:38%; width:35.26%">Very bad practice. Avoid this!</div>
 
+<!-- attr: {class: 'slide-section', showInPresentation: true} -->
+<!-- # Slow Character Duplication -->
 ## [Demo]()
-<img class="slide-image" src="\imgs\pic28.png"/>
+<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic28.png"/> -->
 
-# Introducing `StringBuilder`
-##	Faster way to generate strings
+<!-- section start -->
 
-#	Introducing `StringBuilder`
+<!-- attr: {class: 'slide-section', showInPresentation: true} -->
+<!-- # Introducing `StringBuilder`
+##  Faster way to generate strings -->
+
+<!-- attr: {hasScriptWrapper: true} -->
+#  Introducing `StringBuilder`
 
 - `StringBuilder` keeps a buffer memory, allocated in advance
   - Most operations use the buffer memory and do not allocate new objects
 
-<img class="slide-image" src="\imgs\builder-buffer.png" />
+<img class="slide-image" src="imgs/builder-buffer.png" />
 
+<!-- attr: {style: 'font-size: 0.8em'} -->
 # Concatenating with `StringBuilder`?
 
 - Consider the following string concatenation:
@@ -489,10 +559,10 @@ string result = str1 + str2;
 
 - It is equivalent to this code:
 ```cs
-	StringBuilder sb = new StringBuilder();
-	sb.Append(str1);
-	sb.Append(str2);
-	string result = sb.ToString();
+  StringBuilder sb = new StringBuilder();
+  sb.Append(str1);
+  sb.Append(str2);
+  string result = sb.ToString();
 ```
 
 - Several new objects are created and left to the garbage collector for deallocation
@@ -505,47 +575,52 @@ string result = str1 + str2;
 - `this[int index]` (indexer in C#) gives access to the char value at given position
 - `string#Length` holds the length of the string in the buffer
 
-# The StringBuilder Class
+<!-- attr: {showInPresentation: true, style: 'font-size: 0.8em'} -->
+<!-- # The StringBuilder Class -->
 - `StringBuilder#Append(…)` appends a string or another object after the last character in the buffer
 - `StringBuilder#Remove(int startIndex, int length)` removes the characters in given range
 - `StringBuilder#Insert(int index, string str)` inserts given string (or object) at given position
 - `StringBuilder#Replace(string oldStr, string newStr)` replaces all occurrences of a substring
 - `StringBuilder#ToString()` converts the`StringBuilder` to a `string`
 
+<!-- attr: {style: 'font-size: 0.9em'} -->
 # Changing the Contents of a `string` with a `StringBuilder`
 - Use the `System.Text.StringBuilder` class for modifiable strings of characters:
 
 
--	_Example_ **Reversing** a `string`:
+-  _Example_ **Reversing** a `string`:
 
 ```cs
 public static string ReverseString(string s)
 {
     StringBuilder sb = new StringBuilder();
 
-		for (int i = s.Length-1; i >= 0; i--)
-		{
+    for (int i = s.Length-1; i >= 0; i--)
+    {
         sb.Append(s[i]);
-		}
+    }
 
-		return sb.ToString();
+    return sb.ToString();
 }
 ```
 
+<!-- attr: {style: 'font-size: 0.8em'} -->
+# Appending characters to `string` with `StringBuilder`
+
 - Use `StringBuilder` if you need to keep adding characters to a string
 
-- _Example_ Extracting **all capital letters** from a `string`:
+  - _Example_ Extracting **all capital letters** from a `string`:
 
 ```cs
 public static string ExtractCapitals(string text)
 {
     StringBuilder result = new StringBuilder();
 
-		foreach(char character in text)
-		{
-	  	if (Char.IsUpper(character))
+    foreach(char character in text)
+    {
+      if (Char.IsUpper(character))
       {
-      	result.Append(character);
+        result.Append(character);
       }
     }
 
@@ -553,29 +628,30 @@ public static string ExtractCapitals(string text)
 }
 ```
 
-<img class="slide-image" src="\imgs\pic29.png"/>
-
-# Using StringBuilder
+<!-- attr: {class: 'slide-section', showInPresentation: true} -->
+<!-- # Using `StringBuilder` -->
 ## [Demo]()
-<img class="slide-image" src="\imgs\pic30.png" />
-
+<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic30.png" /> -->
 
 <!-- section start -->
-# Formatting Strings
-## Using ToString() and String.Format()
-<img class="slide-image" src="\imgs\pic31.png"/>
-<img class="slide-image" src="\imgs\pic32.png"/>
-<img class="slide-image" src="\imgs\pic33.png"/>
 
+<!-- attr: {class: 'slide-section', showInPresentation: true} -->
+<!-- # Formatting Strings
+## Using ToString() and String.Format() -->
+<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic31.png"/> -->
+<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic32.png"/> -->
+<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic33.png"/> -->
+
+<!-- attr: { style: 'font-size: 0.9em'} -->
 # Method ToString()
 
 - All classes in C# have public virtual method **ToString()**
   - Returns a human-readable, culture-sensitive string representing the object
-		-	If implemented correctly
+    -  If implemented correctly
   - Most .NET Framework types have own implementation of **ToString()**
     - **int**, **float**, **bool**, **DateTime**
 
--	_Example:_
+-  _Example:_
 
 ```cs
 int number = 5;
@@ -613,14 +689,15 @@ s = d.ToString("P2"); // 37,50 %
   - `F` – fixed point (for real numbers)
 
 
+<!-- attr: {style: 'font-size: 0.8em'} -->
 # Method String.Format()
 
--	`String.Format(template, params...)`:
-	- Applies **templates** for formatting strings
-	  - Placeholders are used for dynamic text
-	  - The same as `Console.WriteLine(…)`
+-  `String.Format(template, params...)`:
+  - Applies **templates** for formatting strings
+    - Placeholders are used for dynamic text
+    - The same as `Console.WriteLine(…)`
 
--	_Example:_
+-  _Example:_
 
 ```cs
 string template = "If I were {0}, I would {1}.";
@@ -667,6 +744,7 @@ Console.WriteLine ("Now is {0:d.MM.yyyy HH:mm:ss}", now);
 // Now is 31.11.2009 11:30:32
 ```
 
+<!-- attr: {style: 'font-size: 0.9em'} -->
 # Cultures
 
 - **Cultures** in .NET specify formatting / parsing settings specific to country / region / language
@@ -707,9 +785,10 @@ string dateStr = "25.07.2011";
 DateTime date = DateTime.ParseExact(dateStr, "dd.MM.yyyy", CultureInfo.InvariantCulture);
 ```
 
-# Formatting Strings
+<!-- attr: {class: 'slide-section', showInPresentation: true} -->
+<!-- # Formatting Strings -->
 ## [Demo]()
-<img class="slide-image" src="\imgs\pic34.png" />
+<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic34.png" /> -->
 
 <!-- section start -->
 
@@ -720,11 +799,14 @@ DateTime date = DateTime.ParseExact(dateStr, "dd.MM.yyyy", CultureInfo.Invariant
 - Most important string processing members are:
   - `Length`, `this[]`, `Compare(str1, str2)`, `IndexOf(str)`, `LastIndexOf(str)`, `Substring(startIndex, length)`, `Replace(oldStr, newStr)`, `Remove(startIndex, length)`, `ToLower()`, `ToUpper()`, `Trim()`
 
-# Summary
+<!-- attr: {showInPresentation: true} -->
+<!-- # Summary -->
 - Objects can be converted to strings and can be formatted in different styles (using `ToString()` method)
 - Strings can be constructed by using placeholders and formatting strings (`String.Format(…)`)
-<img class="slide-image" src="\imgs\pic35.png" />
 
+<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic35.png" /> -->
+
+<!-- section start -->
 
 <!-- attr: { id:'', class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 <!-- # Strings and Text Preprocessing
@@ -741,7 +823,8 @@ DateTime date = DateTime.ParseExact(dateStr, "dd.MM.yyyy", CultureInfo.Invariant
     - [facebook.com/TelerikAcademy](facebook.com/TelerikAcademy)
   - Telerik Software Academy Forums
     - forums.academy.telerik.com
-<img class="slide-image" src="\imgs\pic36.png" />
-<img class="slide-image" src="\imgs\pic37.png" />
-<img class="slide-image" src="\imgs\pic38.png" />
-<img class="slide-image" src="\imgs\pic39.png" />
+
+<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic36.png" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic37.png" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic38.png" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic39.png" /> -->
