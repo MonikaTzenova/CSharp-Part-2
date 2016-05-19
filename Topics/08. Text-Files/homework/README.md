@@ -13,6 +13,6 @@ Homework: Text files
 1. [Replace whole word](./08. Replace whole word)
 1. [Delete odd lines](./09. Delete odd lines)
 1. [Extract text from XML](./10. Extract text from XML)
-1. [Prefix "test"](./11. Prefix \"test\")
+1. [Prefix "test"](./11. Prefix test)
 1. [Remove words](./12. Remove words)
 1. [Count words](./13. Count words)

@@ -20,3 +20,6 @@ You are given a text. Write a program that changes the text in all regions surro
 | Input | Output |
 |:-----:|:------:|
 | We are living in a `<upcase>`**yellow submarine**`</upcase>`. We don't have `<upcase>`**anything**`</upcase>` else. | We are living in a **YELLOW SUBMARINE**. We don't have **ANYTHING** else. |
+
+## Submission
+- Submit your code [here](http://bgcoder.com/Contests/Compete/Index/320#3)

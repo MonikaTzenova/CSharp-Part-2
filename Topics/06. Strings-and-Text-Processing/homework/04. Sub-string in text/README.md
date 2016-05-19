@@ -21,3 +21,6 @@ Write a program that finds how many times a sub-string is contained in a given t
 | Input | Output |
 |:------|:-------|
 | in<br>We are liv**in**g **in** an yellow submar**in**e. We don't have anyth**in**g else. **in**side the submar**in**e is very tight. So we are dr**in**k**in**g all the day. We will move out of it **in** 5 days. | 9 |
+
+## Submission
+- Submit your code [here](http://bgcoder.com/Contests/Compete/Index/320#2)

@@ -20,3 +20,6 @@ Write a program that reads from the console a string of maximum `20` characters.
 |:-----:|:------:|
 | hello | hello\*\*\*\*\*\*\*\*\*\*\*\*\*\*\* |
 | -=StringOfLength20=- | -=StringOfLength20=- |
+
+## Submission
+- Submit your code [here](http://bgcoder.com/Contests/Compete/Index/320#4)

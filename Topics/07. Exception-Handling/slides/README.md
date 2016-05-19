@@ -1,13 +1,13 @@
 <!-- section start -->
-<!-- attr: {  class:'slide-title', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-<!-- # Exception Handling -->
-<!-- ## Handling Errors during the Program Execution -->
+<!-- attr: {  class:'slide-title', showInPresentation:true, hasScriptWrapper:true } -->
+# Exception Handling
+## Handling Errors during the Program Execution
 <!-- <img class="slide-image" showInPresentation="true"  src="imgs/pic01.png" style="top:53.52%; left:50.07%; width:19.55%; z-index:-1" /> -->
 <!-- <img class="slide-image" showInPresentation="true"  src="imgs/pic02.png" style="top:52.71%; left:73.92%; width:29.62%; border-radius:10px; border: 2px solid white; z-index:-1" /> -->
 
 <div class="signature">
 	<p class="signature-course">C# Advanced</p>
-	<p class="signature-initiative">Telerik </p>
+	<p class="signature-initiative">Telerik Software Academy</p>
 	<a href="https://telerikacademy.com" class="signature-link">https://telerikacademy.com</a>
 </div>
 
@@ -15,42 +15,44 @@
 
 
 <!-- section start -->
-<!-- attr: {  showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # Table of Contents
-- [What are Exceptions?](#/what-are-exceptions)
-- [Handling Exceptions](#/handling-exceptions)
-- [The System.Exception Class](#/system-exception-class)
-- [Types of Exceptions and their Hierarchy](#/exception-types)
-- [Raising (Throwing) Exceptions](#/throwing-exceptions)
-- [Best Practices](#/best-practices)
+- [What are Exceptions?](#what-are-exceptions)
+- [Handling Exceptions](#handling-exceptions)
+- [The System.Exception Class](#system-exception-class)
+- [Exception types and hierarchy](#exception-types)
+- [Raising (Throwing) Exceptions](#throwing-exceptions)
+- [Best Practices](#best-practices)
 
-
+<!-- <img class="slide-image" showInPresentation="true"  src="imgs/pic03.png" style="top:25%; right:10%; width:15%; z-index:-1; border-radius: 15px" /> -->
 
 
 <!-- section start -->
-<!-- attr: { id:'what-are-exceptions', class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { id:'what-are-exceptions', class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # <a id="what-are-exceptions"></a> What are Exceptions? -->
 <!-- ## The Paradigm of Exceptions in OOP -->
 
 
-<!-- attr: {  showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.9em' } -->
 # What are Exceptions?
 - The `exceptions` in .NET Framework are classic implementation of the OOP exception model
-- Deliver powerful mechanism for centralized handling of errors and unusual events
+- Deliver **powerful mechanism for centralized handling of errors** and unusual events
 - Substitute procedure-oriented approach, in which each function returns error code
-- Simplify code construction and maintenance
-- Allow the problematic situations to be processed at multiple levels
+- **Simplify code construction and maintenance**
+- **Allow the problematic situations to be processed at multiple levels**
+- [Read more](https://en.wikipedia.org/wiki/Exception_handling) about exception handling in general on wikipedia
 
 
 
 
 <!-- section start -->
-<!-- attr: { id:'handling-exceptions', class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { id:'handling-exceptions', class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # <a id=""></a> Handling Exceptions -->
-<!-- <img class="slide-image" showInPresentation="true"  src="imgs/pic05.png" style="top:42%; left:37.87%; width:34.38%;border-radius:10px; border: 2px solid white; z-index:-1" /> -->
+
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic05.png" style="top:42%; left:35%; width:30%;border-radius:10px; border: 2px solid white; z-index:-1" /> -->
 
 
-<!-- attr: {  showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # Handling Exceptions
 - In C# the exceptions can be handled by the `try-catch-finally` construction
 
@@ -66,10 +68,11 @@ catch (SomeException)
 ```
 
 - `catch` blocks can be used multiple times to process different exception types
+
 <!-- <img class="slide-image" showInPresentation="true"  src="imgs/pic06.png" style="top:25.56%; left:92.63%; width:12.54%; border-radius:10px; border: 2px solid white;z-index:0" /> -->
 
 
-<!-- attr: {  showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # Handling Exceptions – _Example_
 
 ```cs
@@ -78,9 +81,9 @@ static void Main()
     string s = Console.ReadLine();
     try
     {
-        Int32.Parse(s);
+        int.Parse(s);
         Console.WriteLine(
-           "You entered valid Int32 number {0}.", s);
+           "You entered valid int number {0}.", s);
     }
     catch (FormatException)
     {
@@ -89,7 +92,7 @@ static void Main()
     catch (OverflowException)
     {
         Console.WriteLine(
-           "The number is too big to fit in Int32!");
+           "The number is too big to fit in int!");
     }
 }
 ```
@@ -97,99 +100,103 @@ static void Main()
 <!-- <img class="slide-image" showInPresentation="true"  src="imgs/pic07.png" style="top:15.32%; left:83.01%; width:18.76%; border-radius:10px; border: 2px solid white;z-index:0" /> -->
 
 
-<!-- attr: {  class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: {  class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Handling Exceptions -->
 
-<!-- <img class="slide-image" showInPresentation="true"  src="imgs/pic08.png" style="top:42%; left:36%; width:30%; border-radius:10px; border: 2px solid white;z-index:-1" /> -->
+<!-- <img class="slide-image" showInPresentation="true"  src="imgs/pic08.png" style="top:45%; left:35%; width:30%; border-radius:10px; border: 2px solid white;z-index:-1" /> -->
 
 
-<!-- attr: { id:'system-exception-class',  showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { id:'system-exception-class',  showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.9em' } -->
 # <a id="system-exception-class"></a> The System.Exception Class
-- Exceptions in .NET are objects
+- **Exceptions in .NET are objects**
 - The `System.Exception` class is base for all exceptions in CLR
-  - Contains information for the cause of the error / unusual situation
+  - **Contains information for the cause of the error** / unusual situation in the form of the following properties:
     - `Message` – text description of the exception
     - `StackTrace` – the snapshot of the stack at the moment of exception throwing
-    - `InnerException` – exception caused the currentexception (if any)
+    - `InnerException` – exception that caused the current exception (if any)
 
 
-<!-- attr: {  showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.9em' } -->
 # Exception Properties – _Example_
 
 ```cs
-class Exceptions_Example_
+class ExceptionsExample
 {
-  public static void CauseFormatException()
-  {
-    string s = "an invalid number";
-    Int32.Parse(s);
-  }
-  static void Main()
-  {
-    try
+    public static void CauseFormatException()
     {
-      CauseFormatException();
+        string s = "an invalid number";
+        int.Parse(s);
     }
-    catch (FormatException fe)
+    
+    static void Main()
     {
-      Console.Error.WriteLine("Exception: {0}\n{1}",
-        fe.Message, fe.StackTrace);
+        try
+        {
+            CauseFormatException();
+        }
+        catch (FormatException fe)
+        {
+            Console.Error.WriteLine("Exception: {0}\n{1}",
+                                    fe.Message, fe.StackTrace);
+        }
     }
-  }
 }
+
 ```
 
 
 
-<!-- attr: {  showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.8em' } -->
 # Exceptions Properties
 - The `Message` property gives brief description of the problem
 - The `StackTrace` property is extremely useful when identifying the reason caused the exception
 
 ```cs
 Exception caught: Input string was not in a correct format.
-   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
-   at System.Int32.Parse(String s)
+   at System.Number.Parseint(String s, NumberStyles style, NumberFormatInfo info)
+   at System.int.Parse(String s)
    at ExceptionsTest.CauseFormatException() in c:\consoleapplication1\exceptionstest.cs:line 8
    at ExceptionsTest.Main(String[] args) in c:\consoleapplication1\exceptionstest.cs:line 15
 ```
 
 
 
-<!-- attr: {  showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.9em' } -->
 <!-- # Exception Properties -->
-- File names and line numbers are accessible only if the compilation was in `Debug` mode
+- File names and line numbers are accessible **only** if the compilation was in `Debug` mode
 - When compiled in `Release` mode, the information in the property `StackTrace` is quite different:
 
 ```cs
 Exception caught: Input string was not in a correct format.
-   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Number.Parseint(String s, NumberStyles style, NumberFormatInfo info)
    at ExceptionsTest.Main(String[] args)
 ```
 
-<!-- <img class="slide-image" showInPresentation="true"  src="imgs/pic10.png" style="top:72%; left:24.33%; width:60.61%;border-radius:10px; border: 2px solid white; z-index:-1" /> -->
+<!-- <img class="slide-image" showInPresentation="true"  src="imgs/pic10.png" style="top:65%; left:24.33%; width:60.61%;border-radius:10px; border: 2px solid white; z-index: 1" /> -->
 
 
-<!-- attr: {  class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Exceptions Properties
-## [Demo](https://github.com/TelerikAcademy/CSharp-Part-2/tree/master/Topics/07.%20Exception%20Handling/demos/ExceptionsProperties)
+<!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # Exceptions Properties
+## [Demo](https://github.com/TelerikAcademy/CSharp-Part-2/tree/master/Topics/07.%20Exception%20Handling/demos/ExceptionsProperties) -->
 
 
 
 
 <!-- section start -->
-<!-- attr: {  class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # The Hierarchy of Exceptions -->
-<!-- <img class="slide-image" showInPresentation="true"  src="imgs/pic12.png" style="top:42%; left:35.47%; width:35.67%;border-radius:10px; border: 2px solid white; z-index:-1" /> -->
+
+<!-- <img class="slide-image" showInPresentation="true"  src="imgs/pic12.png" style="top:45%; left:35%; width:30%;border-radius:10px; border: 2px solid white; z-index:-1" /> -->
 
 
-<!-- attr: {  showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: {  showInPresentation:true, hasScriptWrapper:true } -->
 # Exceptions Hierarchy
 - Exceptions in .NET Framework are organized in a hierarchy
-<!-- <img class="slide-image" showInPresentation="true"  src="imgs/pic13.png" style="top:27.13%; left:5.55%; width:95.55%;border-radius:10px;  z-index:-1" /> -->
+
+<img class="slide-image" showInPresentation="true"  src="imgs/pic13.png" style="top:27.13%; left:5.55%; width:95.55%;border-radius:10px;  z-index:-1" />
 
 
-<!-- attr: { id:'exception-types',  showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { id:'exception-types',  showInPresentation:true, hasScriptWrapper:true } -->
 # <a id="exception-types"></a> Types of Exceptions
 - .NET exceptions inherit from `System.Exception`
 - The system exceptions inherit from `System.SystemException`, e.g.
@@ -216,14 +223,14 @@ catch (System.ArithmeticException)
 }
 ```
 
-- 	Handles `ArithmeticException` and its descendants `DivideByZeroException` and `OverflowException`
+- Handles `ArithmeticException` and its descendants `DivideByZeroException` and `OverflowException`
 
 
 
 <!-- <img class="slide-image" showInPresentation="true"  src="imgs/pic14.png" style="top:27.99%; left:87.95%; width:15.14%; border-radius:10px; border: 2px solid black;z-index:0" /> -->
 
 
-<!-- attr: {  showInPresentation:true, hasScriptWrapper:true, style:'font-size: 40px;' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 40px;' } -->
 # Find the Mistake!
 
 ```cs
@@ -232,30 +239,26 @@ static void Main()
    string s = Console.ReadLine();
    try
    {
-      Int32.Parse(s);
+      int.Parse(s);
    }
-   catch (Exception)
+   catch (Exception) // this catch should come last
    {
       Console.WriteLine("Can not parse the number!");
    }
-   catch (FormatException)
+   catch (FormatException) // unreachable block
    {
       Console.WriteLine("Invalid integer number!");
    }
-   catch (OverflowException)
+   catch (OverflowException) // unreachable block
    {
       Console.WriteLine(
-       "The number is too big to fit in Int32!");
+       "The number is too big to fit in int!");
    }
 }
 ```
 
-<div class="fragment balloon" style="top:38.71%; left:44.08%; width:35.26%">This should be last</div>
-<div class="fragment balloon" style="top:52.45%; left:55.24%; width:35.26%">Unreachable code</div>
-<div class="fragment balloon" style="top:67.66%; left:55.62%; width:35.26%">Unreachable code</div>
 
-
-<!-- attr: {  showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: {  showInPresentation:true, hasScriptWrapper:true } -->
 # Handling All Exceptions
 - All exceptions thrown by .NET managed code inherit the `System.Exception` exception
 - Unmanaged code can throw other exceptions
@@ -278,12 +281,13 @@ catch
 
 
 <!-- section start -->
-<!-- attr: { id:'throwing-exceptions', class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { id:'throwing-exceptions', class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # <a id="throwing-exceptions"></a> Throwing Exceptions -->
-<!-- <img class="slide-image" showInPresentation="true"  src="imgs/pic16.png" style="top:42%; left:32.75%; width:44.08%; border-radius:10px; border: 2px solid white;z-index:-1" /> -->
+
+<!-- <img class="slide-image" showInPresentation="true"  src="imgs/pic16.png" style="top:45%; left:32.5%; width:35%; border-radius:10px; border: 2px solid white;z-index:-1" /> -->
 
 
-<!-- attr: {  showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # Throwing Exceptions
 - Exceptions are thrown (raised) by `throw` keyword in C#
   - Used to notify the calling code in case of error or unusual situation
@@ -293,15 +297,13 @@ catch
 - Unhandled exceptions display error message
 
 
-<!-- attr: {  showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # How Exceptions Work? -->
-
-
 
 <!-- <img class="slide-image" showInPresentation="true"  src="imgs/exceptions-how.png" style="top:10%; left:10%; width:85%;  %;z-index:-1" /> -->
 
 
-<!-- attr: {  showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.9em' } -->
 # Using throw Keyword
 - Throwing an exception with an error message:
 
@@ -315,7 +317,7 @@ throw new ArgumentException("Invalid amount!");
 ```cs
 try
 {
-  Int32.Parse(str);
+  int.Parse(str);
 }
 catch (FormatException fe)
 {
@@ -325,19 +327,19 @@ catch (FormatException fe)
 
 
 
-<!-- attr: {  showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # Re-Throwing Exceptions
 - Caught exceptions can be re-thrown again:
 
 ```cs
 try
 {
-  Int32.Parse(str);
+    int.Parse(str);
 }
 catch (FormatException fe)
 {
-  Console.WriteLine("Parse failed!");
-  throw fe; // Re-throw the caught exception
+    Console.WriteLine("Parse failed!");
+    throw fe; // Re-throw the caught exception
 }
 ```
 
@@ -345,13 +347,13 @@ catch (FormatException fe)
 ```cs
 catch (FormatException)
 {
-  throw; // Re-throws the last caught exception
+    throw; // Re-throws the last caught exception
 }
 ```
 
 
 
-<!-- attr: {  showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.9em' } -->
 # Throwing Exceptions – _Example_
 
 ```cs
@@ -360,6 +362,7 @@ public static double Sqrt(double value)
    if (value < 0)
        throw new System.ArgumentOutOfRangeException(
           "Sqrt for negative numbers is undefined!");
+          
    return Math.Sqrt(value);
 }
 static void Main()
@@ -378,9 +381,9 @@ static void Main()
 
 
 
-<!-- attr: {  class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Throwing Exceptions
-## [Demo](https://github.com/TelerikAcademy/CSharp-Part-2/tree/master/Topics/07.%20Exception%20Handling/demos/ThrowingExceptions)
+<!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # Throwing Exceptions
+## [Demo](https://github.com/TelerikAcademy/CSharp-Part-2/tree/master/Topics/07.%20Exception%20Handling/demos/ThrowingExceptions) -->
 
 
 <!-- attr: {  showInPresentation:true, hasScriptWrapper:true, style:'font-size: 40px;' } -->
@@ -392,18 +395,18 @@ static void Main()
 - When a method is still not implemented
   - `NotImplementedException`
 - If no suitable standard exception class is available
-  - Create own exception class (inherit `Exception`)
+  - Create own exception class (inherit `System.Exception`)
 
 
 
 
 <!-- section start -->
-<!-- attr: {  class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Using Try-Finally Blocks -->
-<!-- <img class="slide-image" showInPresentation="true"  src="imgs/pic21.png" style="top:42%; left:37.67%; width:34.38%;border-radius:10px; border: 2px solid white; z-index:-1" /> -->
+<!-- <img class="slide-image" showInPresentation="true"  src="imgs/pic21.png" style="top:45%; left:35%; width:30%;border-radius:10px; border: 2px solid white; z-index:-1" /> -->
 
 
-<!-- attr: {  showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.95em' } -->
 # The try-finally Statement
 - The statement:
 
@@ -426,17 +429,17 @@ finally
 
 
 
-<!-- attr: {  showInPresentation:true, hasScriptWrapper:true, style:'font-size: 40px;' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.8em' } -->
 # try-finally – _Example_
 
 ```cs
 static void TestTryFinally()
 {
   Console.WriteLine("Code executed before try-finally.");
+  
   try
   {
-    string str = Console.ReadLine();
-    Int32.Parse(str);
+    int.Parse(Console.ReadLine());
     Console.WriteLine("Parsing was successful.");
     return; // Exit from the current method
   }
@@ -446,9 +449,9 @@ static void TestTryFinally()
   }
   finally
   {
-    Console.WriteLine(
-      "This cleanup code is always executed.");
+    Console.WriteLine("This cleanup code is always executed.");
   }
+  
   Console.WriteLine(
     "This code is after the try-finally block.");
 }
@@ -456,54 +459,55 @@ static void TestTryFinally()
 
 
 
-<!-- attr: {  class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Try-Finally
-## [Demo](https://github.com/TelerikAcademy/CSharp-Part-2/tree/master/Topics/07.%20Exception%20Handling/demos/TryFinally)
-<!-- <img class="slide-image" showInPresentation="true"  src="imgs/pic22.png" style="top:52%; left:40.50%; width:19.39%; z-index:-1" /> -->
+<!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # try-finally
+## [Demo](https://github.com/TelerikAcademy/CSharp-Part-2/tree/master/Topics/07.%20Exception%20Handling/demos/TryFinally) -->
+
 <!-- <img class="slide-image" showInPresentation="true"  src="imgs/pic23.png" style="top:32.05%; left:80.96%; width:21.57%; z-index:-1" /> -->
-<!-- <img class="slide-image" showInPresentation="true"  src="imgs/pic24.png" style="top:32.62%; left:7.49%; width:24.68%; z-index:-1" /> -->
 
 
 
 
 <!-- section start -->
-<!-- attr: { id:'best-practices', class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-<!-- # <a id="best-practices"></a> Exceptions: Best Practices -->
+<!-- attr: { id:'best-practices', class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # <a id="best-practices"></a> Exceptions: Best Practices 
+## Don't be a codemonkey! -->
 
 
-<!-- attr: {  showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # Exceptions – Best Practices
-- `catch` blocks should begin with the exceptions lowest in the hierarchy
-  - And continue with the more general exceptions
+- `catch` blocks should begin with the exceptions **lowest in the hierarchy**
+  - And c**ontinue with the more general exceptions**
   - Otherwise a compilation error will occur
 - Each `catch` block should handle only these exceptions which it expects
   - If a method is not competent to handle an exception, it should be left unhandled
   - Handling all exceptions disregarding their type is popular bad practice (anti-pattern)!
 
 
-<!-- attr: {  showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Exceptions – Best Practices -->
-- When raising an exception always pass to the constructor good explanation message
-- When throwing an exception always pass a good description of the problem
-  - `Exception message` should explain what causes the problem and how to solve it
-  - Good: "Size should be integer in range [1…15]"
-  - Good: "Invalid state. First call Initialize()"
+- When raising an exception always pass to the constructor **good explanation message**
+- When throwing an exception always pass a **good description of the problem**
+  - `Exception message` should explain **what causes the problem and how to solve it**
+  - **Good**: "Size should be integer in range [1…15]"
+  - **Good**: "Invalid state. First call Initialize()"
   - Bad: "Unexpected error"
   - Bad: "Invalid argument"
+  
 <!-- <img class="slide-image" showInPresentation="true"  src="imgs/pic26.png" style="top:52.19%; left:94.35%; width:12.05%; z-index:-1" /> -->
 <!-- <img class="slide-image" showInPresentation="true"  src="imgs/pic27.png" style="top:75.53%; left:95.80%; width:10.68%;z-index:-1" /> -->
 
 
-<!-- attr: {  showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Exceptions – Best Practices -->
-- Exceptions can decrease the application performance
+- **Exceptions can decrease the application performance**
   - Throw exceptions only in situations which are really `exceptional` and should be handled
   - Do not throw exceptions in the normal program control flow (e.g. for invalid user input)
 - CLR could throw exceptions at any time with no way to predict them
   - E.g. `System.OutOfMemoryException`
 
 
-<!-- attr: {  showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # Summary
 - Exceptions provide flexible error handling mechanism in .NET Framework
   - Allow errors to be handled at multiple levels
@@ -513,15 +517,15 @@ static void TestTryFinally()
 - Try-finally ensures given code block is always executed (even when an exception is thrown)
 
 
-<!-- attr: {  class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Exception Handling
 ## Questions? -->
 
 
-<!-- attr: {  showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # Free Trainings @ Telerik Academy
 - “C# Programming @ Telerik Academy
-    - [csharpfundamentals.telerik.com](csharpfundamentals.telerik.com)
+    - [csharp advanced course](http://academy.telerik.com/student-courses/programming/csharp-programming-part-2/about)
   - Telerik Software Academy
     - [academy.telerik.com](academy.telerik.com)
   - Telerik Academy @ Facebook
