@@ -35,7 +35,6 @@
 
 <!-- section start -->
 
-<!-- attr: { showInPresentation: true} -->
 # What Is String?
 ##	Sequences of Characters
 <img class="slide-image" src="\imgs\pic06.png" />
@@ -43,7 +42,7 @@
 # What Is String?
 - Strings are sequences of characters
 - Each character is a Unicode symbol
-- Represented by the **string** data type in C# (**System.String**)
+- Represented by the `string` data type in C# (`System.String`)
 - _Example_:
 
 ```cs
@@ -55,8 +54,6 @@ string s = "Hello, C#";
 
 <img class="slide-image" src="\imgs\pic07.png" />
 
-
-<!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # The `System.String` Class
 - Strings are represented by `System.String` objects in .NET Framework
   - String objects contain an **immutable** (read-only) sequence of characters
@@ -95,13 +92,11 @@ static void Main()
 }
 ```
 
-<img class="slide-image" src="\imgs\pic09.png" style="top:12.34%; left:90.16%; width:17.63%; z-index:-1" />
+<img class="slide-image" src="\imgs\pic09.png" />
 
-
-<!-- attr: { id:'', class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Printing the Characters of a String
 ## [Demo]()
-<img class="slide-image" src="\imgs\pic10.png" style="top:52%; left:35%; width:30%; z-index:-1" />
+<img class="slide-image" src="\imgs\pic10.png"/>
 
 # Declaring Strings
 - Several ways of declaring string variables:
@@ -503,88 +498,84 @@ string result = str1 + str2;
 - Several new objects are created and left to the garbage collector for deallocation
   - What happens when using **+** in a loop?
 
-
-
-
-<!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # The StringBuilder Class
-- **StringBuilder(int** **capacity)** constructor allocates in advance buffer of given size
+- `StringBuilder(int capacity)` constructor allocates in advance buffer of given size
   - By default 16 characters are allocated
-- **Capacity** holds the currently allocated space (in characters)
-- **this[int** **index]** (indexer in C#) gives access to the char value at given position
-- **Length** holds the length of the string in the buffer
+- `string#Capacity` holds the currently allocated space (in characters)
+- `this[int index]` (indexer in C#) gives access to the char value at given position
+- `string#Length` holds the length of the string in the buffer
+
+# The StringBuilder Class
+- `StringBuilder#Append(…)` appends a string or another object after the last character in the buffer
+- `StringBuilder#Remove(int startIndex, int length)` removes the characters in given range
+- `StringBuilder#Insert(int index, string str)` inserts given string (or object) at given position
+- `StringBuilder#Replace(string oldStr, string newStr)` replaces all occurrences of a substring
+- `StringBuilder#ToString()` converts the`StringBuilder` to a `string`
+
+# Changing the Contents of a `string` with a `StringBuilder`
+- Use the `System.Text.StringBuilder` class for modifiable strings of characters:
 
 
-<!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-<!-- # The StringBuilder Class -->
-- **Append(…)** appends a string or another object after the last character in the buffer
-- **Remove(int** **startIndex,** **int** **length)** removes the characters in given range
-- **Insert(int** **index,** **string** **str)** inserts given string (or object) at given position
-- **Replace(string** **oldStr,** **string** **newStr)** replaces all occurrences of a substring
-- **ToString()** converts the **StringBuilder** to **String**
-
-
-<!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Changing the Contents of a String with StringBuilder
-- Use the **System.Text.StringBuilder** class for modifiable strings of characters:
+-	_Example_ **Reversing** a `string`:
 
 ```cs
 public static string ReverseString(string s)
 {
     StringBuilder sb = new StringBuilder();
-    for (int i = s.Length-1; i >= 0; i--)
+
+		for (int i = s.Length-1; i >= 0; i--)
+		{
         sb.Append(s[i]);
-    return sb.ToString();
+		}
+
+		return sb.ToString();
 }
 ```
 
-- Use **StringBuilder** if you need to keep adding characters to a string
+- Use `StringBuilder` if you need to keep adding characters to a string
 
-<!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# StringBuilder – Another _Example_
-- Extracting all capital letters from a string
+- _Example_ Extracting **all capital letters** from a `string`:
 
 ```cs
-public static string ExtractCapitals(string s)
+public static string ExtractCapitals(string text)
 {
     StringBuilder result = new StringBuilder();
-    for (int i = 0; i<s.Length; i++)
-    {
-	  if (Char.IsUpper(s[i]))
-        {
-            result.Append(s[i]);
-        }
+
+		foreach(char character in text)
+		{
+	  	if (Char.IsUpper(character))
+      {
+      	result.Append(character);
+      }
     }
+
     return result.ToString();
 }
 ```
 
-<img class="slide-image" src="\imgs\pic29.png" style="top:47.57%; left:82.00%; width:22.36%; z-index:0" />
+<img class="slide-image" src="\imgs\pic29.png"/>
 
-
-<!-- attr: { id:'', class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Using StringBuilder
 ## [Demo]()
-<img class="slide-image" src="\imgs\pic30.png" style="top:52%; left:30.50%; width:40%; z-index:-1" />
-
-
+<img class="slide-image" src="\imgs\pic30.png" />
 
 
 <!-- section start -->
-<!-- attr: { id:'', class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Formatting Strings
 ## Using ToString() and String.Format()
-<img class="slide-image" src="\imgs\pic31.png" style="top:52%; left:10.29%; width:18.95%; z-index:-1" />
-<img class="slide-image" src="\imgs\pic32.png" style="top:52%; left:38.36%; width:20.28%; z-index:-1" />
-<img class="slide-image" src="\imgs\pic33.png" style="top:52%; left:69.24%; width:31.74%; z-index:-1" />
+<img class="slide-image" src="\imgs\pic31.png"/>
+<img class="slide-image" src="\imgs\pic32.png"/>
+<img class="slide-image" src="\imgs\pic33.png"/>
 
+# Method ToString()
 
-<!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-<!-- # Method ToString() -->
 - All classes in C# have public virtual method **ToString()**
   - Returns a human-readable, culture-sensitive string representing the object
+		-	If implemented correctly
   - Most .NET Framework types have own implementation of **ToString()**
     - **int**, **float**, **bool**, **DateTime**
+
+-	_Example:_
 
 ```cs
 int number = 5;
@@ -592,10 +583,8 @@ string s = "The number is " + number.ToString();
 Console.WriteLine(s); // The number is 5
 ```
 
+# Method ToString(format)
 
-
-<!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-<!-- # Method ToString(format) -->
 - We can apply specific formatting when converting objects to string
   - **ToString(formatString)** method
 
@@ -612,42 +601,38 @@ double d = 0.375;
 s = d.ToString("P2"); // 37,50 %
 ```
 
-
-
-<!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Formatting Strings
+
 - The formatting strings are different for the different types
 - Some formatting strings for numbers:
-  - **D** – number (for integer types)
-  - **C** – currency (according to current culture)
-  - **E** – number in exponential notation
-  - **P** – percentage
-  - **X** – hexadecimal number
-  - **F** – fixed point (for real numbers)
+  - `D` – number (for integer types)
+  - `C` – currency (according to current culture)
+  - `E` – number in exponential notation
+  - `P` – percentage
+  - `X` – hexadecimal number
+  - `F` – fixed point (for real numbers)
 
 
-<!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-<!-- # Method String.Format() -->
-- Applies **templates** for formatting strings
-  - Placeholders are used for dynamic text
-  - Like **Console.WriteLine(…)**
+# Method String.Format()
+
+-	`String.Format(template, params...)`:
+	- Applies **templates** for formatting strings
+	  - Placeholders are used for dynamic text
+	  - The same as `Console.WriteLine(…)`
+
+-	_Example:_
 
 ```cs
 string template = "If I were {0}, I would {1}.";
-string sentence1 = String.Format(
-    template, "developer", "know C#");
+string sentence1 = String.Format(template, "developer", "know C#");
 Console.WriteLine(sentence1);
 // If I were developer, I would know C#.
 
-string sentence2 = String.Format(
-    template, "elephant", "weigh 4500 kg");
+string sentence2 = String.Format(template, "elephant", "weigh 4500 kg");
 Console.WriteLine(sentence2);
 // If I were elephant, I would weigh 4500 kg.
 ```
 
-
-
-<!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Composite Formatting
 - The placeholders in the composite formatting strings are specified as follows:
 
@@ -668,58 +653,50 @@ Console.WriteLine("Dec {0:D} = Hex {1:X}",
 // Dec 42 = Hex 2A
 ```
 
-
-
-<!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Formatting Dates
+
 - Dates have their own formatting strings
-  - **d**, **dd** – day (with/without leading zero)
-  - **M**, **MM** – month
-  - **yy**, **yyyy** – year (2 or 4 digits)
-  - **h**, **HH**, **m**, **mm**, **s**, **ss** – hour, minute, second
+  - `d`, `dd` – day (with/without leading zero)
+  - `M`, `MM` – month
+  - `yy`, `yyyy` – year (2 or 4 digits)
+  - `h`, `HH`, `m`, `mm`, `s`, `ss` – hour, minute, second
 
 ```cs
 DateTime now = DateTime.Now;
-Console.WriteLine(
-    "Now is {0:d.MM.yyyy HH:mm:ss}", now);
+Console.WriteLine ("Now is {0:d.MM.yyyy HH:mm:ss}", now);
 // Now is 31.11.2009 11:30:32
 ```
 
-
-
-<!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'font-size: 40px;' } -->
 # Cultures
+
 - **Cultures** in .NET specify formatting / parsing settings specific to country / region / language
 - Printing the current culture:
 
 ```cs
-Console.WriteLine(System.Threading.
-  Thread.CurrentThread.CurrentCulture);
+Console.WriteLine(System.Threading.Thread.CurrentThread.CurrentCulture);
 ```
 
 - Changing the current culture:
 
 ```cs
-System.Threading.Thread.CurrentThread.CurrentCulture =
-  new CultureInfo("en-CA");
+System.Threading.Thread.CurrentThread.CurrentCulture = new CultureInfo("en-CA");
 ```
 
-- Culture-sensitive **ToString()**:
+- Culture-sensitive `ToString()`:
 
 ```cs
 CultureInfo culture = new CultureInfo("fr-CA");
 string s = number.ToString("C", culture); // 42,00 $
 ```
 
-<!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Parsing Numbers and Dates
+
 - Parsing numbers and dates is culture-sensitive
 - Parsing a real number using "." as separator:
 
 ```cs
 string str = "3.14";
-Thread.CurrentThread.CurrentCulture =
-  CultureInfo.InvariantCulture;
+Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
 float f = float.Parse(str); // f = 3.14
 ```
 
@@ -727,32 +704,26 @@ float f = float.Parse(str); // f = 3.14
 
 ```cs
 string dateStr = "25.07.2011";
-DateTime date = DateTime.ParseExact(dateStr,
-  "dd.MM.yyyy", CultureInfo.InvariantCulture);
+DateTime date = DateTime.ParseExact(dateStr, "dd.MM.yyyy", CultureInfo.InvariantCulture);
 ```
 
-
-
-<!-- attr: { id:'', class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Formatting Strings
 ## [Demo]()
-<img class="slide-image" src="\imgs\pic34.png" style="top:52%; left:24.21%; width:61.82%; z-index:-1" />
+<img class="slide-image" src="\imgs\pic34.png" />
 
+<!-- section start -->
 
-<!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Summary
-- Strings are immutable sequences of characters (instances of **System.String**)
-  - Declared by the keyword **string** in C#
+- Strings are immutable sequences of characters (instances of `System.String`)
+  - Declared by the keyword `string` in C#
   - Can be initialized by string literals
 - Most important string processing members are:
-  - **Length**, **this[]**, **Compare(str1,** **str2)**, **IndexOf(str)**, **LastIndexOf(str)**, **Substring(startIndex,** **length)**, **Replace(oldStr,** **newStr)**, **Remove(startIndex,** **length)**, **ToLower()**, **ToUpper()**, **Trim()**
+  - `Length`, `this[]`, `Compare(str1, str2)`, `IndexOf(str)`, `LastIndexOf(str)`, `Substring(startIndex, length)`, `Replace(oldStr, newStr)`, `Remove(startIndex, length)`, `ToLower()`, `ToUpper()`, `Trim()`
 
-
-<!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-<!-- # Summary -->
-- Objects can be converted to strings and can be formatted in different styles (using **ToString()** method)
-- Strings can be constructed by using placeholders and formatting strings (**String.Format(…)**)
-<img class="slide-image" src="\imgs\pic35.png" style="top:57%; left:7.49%; width:91.68%; z-index:-1" />
+# Summary
+- Objects can be converted to strings and can be formatted in different styles (using `ToString()` method)
+- Strings can be constructed by using placeholders and formatting strings (`String.Format(…)`)
+<img class="slide-image" src="\imgs\pic35.png" />
 
 
 <!-- attr: { id:'', class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
@@ -770,7 +741,7 @@ DateTime date = DateTime.ParseExact(dateStr,
     - [facebook.com/TelerikAcademy](facebook.com/TelerikAcademy)
   - Telerik Software Academy Forums
     - forums.academy.telerik.com
-<img class="slide-image" src="\imgs\pic36.png" style="top:60.37%; left:92.39%; width:13.45%; z-index:-1" />
-<img class="slide-image" src="\imgs\pic37.png" style="top:30.85%; left:68.14%; width:36.30%; z-index:-1" />
-<img class="slide-image" src="\imgs\pic38.png" style="top:46.32%; left:95.14%; width:10.85%; z-index:-1" />
-<img class="slide-image" src="\imgs\pic39.png" style="top:13.00%; left:92.85%; width:13.01%; z-index:-1" />
+<img class="slide-image" src="\imgs\pic36.png" />
+<img class="slide-image" src="\imgs\pic37.png" />
+<img class="slide-image" src="\imgs\pic38.png" />
+<img class="slide-image" src="\imgs\pic39.png" />
