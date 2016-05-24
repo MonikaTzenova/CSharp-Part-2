@@ -12,9 +12,8 @@
 </div>
 
 
-
-
 <!-- section start -->
+
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # Table of Contents
 - [What are Exceptions?](#what-are-exceptions)
@@ -42,10 +41,8 @@
 - **Allow the problematic situations to be processed at multiple levels**
 - [Read more](https://en.wikipedia.org/wiki/Exception_handling) about exception handling in general on wikipedia
 
-
-
-
 <!-- section start -->
+
 <!-- attr: { id:'handling-exceptions', class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # <a id=""></a> Handling Exceptions -->
 
@@ -78,22 +75,20 @@ catch (SomeException)
 ```cs
 static void Main()
 {
-    string s = Console.ReadLine();
-    try
-    {
-        int.Parse(s);
-        Console.WriteLine(
-           "You entered valid int number {0}.", s);
-    }
-    catch (FormatException)
-    {
-        Console.WriteLine("Invalid integer number!");
-    }
-    catch (OverflowException)
-    {
-        Console.WriteLine(
-           "The number is too big to fit in int!");
-    }
+  string s = Console.ReadLine();
+  try
+  {
+    int.Parse(s);
+    Console.WriteLine("Valid integer number {0}.", s);
+  }
+  catch (FormatException)
+  {
+    Console.WriteLine("Invalid integer number!");
+  }
+  catch (OverflowException)
+  {
+    Console.WriteLine("The number is too big for int!");
+  }
 }
 ```
 
@@ -122,24 +117,24 @@ static void Main()
 ```cs
 class ExceptionsExample
 {
-    public static void CauseFormatException()
+  public static void CauseFormatException()
+  {
+    string s = "an invalid number";
+    int.Parse(s);
+  }
+ 
+  static void Main()
+  {
+    try
     {
-        string s = "an invalid number";
-        int.Parse(s);
+      CauseFormatException();
     }
-    
-    static void Main()
+    catch (FormatException fe)
     {
-        try
-        {
-            CauseFormatException();
-        }
-        catch (FormatException fe)
-        {
-            Console.Error.WriteLine("Exception: {0}\n{1}",
-                                    fe.Message, fe.StackTrace);
-        }
+      Console.Error.WriteLine("Exception: {0}\n{1}",
+                                 fe.Message, fe.StackTrace);
     }
+  }
 }
 
 ```
@@ -151,7 +146,7 @@ class ExceptionsExample
 - The `Message` property gives brief description of the problem
 - The `StackTrace` property is extremely useful when identifying the reason caused the exception
 
-```cs
+```bash
 Exception caught: Input string was not in a correct format.
    at System.Number.Parseint(String s, NumberStyles style, NumberFormatInfo info)
    at System.int.Parse(String s)
@@ -193,7 +188,7 @@ Exception caught: Input string was not in a correct format.
 # Exceptions Hierarchy
 - Exceptions in .NET Framework are organized in a hierarchy
 
-<img class="slide-image" showInPresentation="true"  src="imgs/pic13.png" style="top:27.13%; left:5.55%; width:95.55%;border-radius:10px;  z-index:-1" />
+<img class="slide-image" showInPresentation="true"  src="imgs/pic13.png" style="top:27.13%; left:5.55%; width:95.55%;border-radius:10px;  z-index:-1; background-color: rgba(222,222,222,0.7)" />
 
 
 <!-- attr: { id:'exception-types',  showInPresentation:true, hasScriptWrapper:true } -->
@@ -251,8 +246,7 @@ static void Main()
    }
    catch (OverflowException) // unreachable block
    {
-      Console.WriteLine(
-       "The number is too big to fit in int!");
+      Console.WriteLine("The number is too big to fit in int!");
    }
 }
 ```
