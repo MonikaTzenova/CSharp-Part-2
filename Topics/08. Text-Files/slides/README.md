@@ -2,10 +2,10 @@
 <!-- attr: { id:'', class:'slide-title', showInPresentation:true, hasScriptWrapper: true, style:'' } -->
 # Text Files
 ## Reading and Writing Text Files
-<img class="slide-image" src="/imgs/pic00.png" style="top:52.89%; left:69.53%; width:33.89%; z-index:-1" />
-<img class="slide-image" src="/imgs/pic01.png" style="top:50.96%; left:91.69%; width:16.03%; z-index:-1" />
-<img class="slide-image" src="/imgs/pic02.png" style="top:53.67%; left:49.19%; width:17.08%; z-index:-1" />
-<img class="slide-image" src="/imgs/pic03.png" style="top:18%; left:5%; width:19.55%; z-index:-1" />
+<img class="slide-image" src="imgs/pic00.png" style="top:52.89%; left:69.53%; width:33.89%; z-index:-1" />
+<img class="slide-image" src="imgs/pic01.png" style="top:50.96%; left:91.69%; width:16.03%; z-index:-1" />
+<img class="slide-image" src="imgs/pic02.png" style="top:53.67%; left:49.19%; width:17.08%; z-index:-1" />
+<img class="slide-image" src="imgs/pic03.png" style="top:18%; left:5%; width:19.55%; z-index:-1" />
 <div class="signature">
 	<p class="signature-course">C# Advanced</p>
 	<p class="signature-initiative">Telerik Software Academy</p>
@@ -25,22 +25,22 @@
 - Writing Text Files
   - The `StreamWriter` Class
 - Handling I/O Exceptions
-<img class="slide-image" src="/imgs/pic06.png" style="top:57.30%; left:76.72%; width:27.18%; z-index:-1" />
+<img class="slide-image" src="imgs/pic06.png" style="top:57.30%; left:76.72%; width:27.18%; z-index:-1" />
 
 <!-- section start -->
 <!-- attr: { id:'', class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # What Is Stream?
 ## Streams Basic Concepts
-<img class="slide-image" src="/imgs/pic08.png" style="top:52%; left:35.79%; width:30%; z-index:-1" />
+<img class="slide-image" src="imgs/pic08.png" style="top:52%; left:35.79%; width:30%; z-index:-1" />
 
 
 <!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # What is Stream?
 - Stream is the natural way to transfer data in the computer world
 - To read or write a file, we open a stream connected to the file and access the data through the stream
-<img class="slide-image" src="/imgs/pic09.png" style="top:53.82%; left:24.33%; width:55.54%; z-index:-1" />
-<img class="slide-image" src="/imgs/pic10.png" style="top:48.68%; left:3.74%; width:25.00%; z-index:-1" />
-<img class="slide-image" src="/imgs/pic11.png" style="top:47.60%; left:79.20%; width:25.00%; z-index:-1" />
+<img class="slide-image" src="imgs/pic09.png" style="top:53.82%; left:24.33%; width:55.54%; z-index:-1" />
+<img class="slide-image" src="imgs/pic10.png" style="top:48.68%; left:3.74%; width:25.00%; z-index:-1" />
+<img class="slide-image" src="imgs/pic11.png" style="top:47.60%; left:79.20%; width:25.00%; z-index:-1" />
 
 
 <!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
@@ -58,7 +58,7 @@
 <!-- section start -->
 <!-- attr: { id:'', class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Reading Text Files
-<img class="slide-image" src="/imgs/pic12.png" style="top:42%; left:37.16%; width:35.81%; z-index:-1" />
+<img class="slide-image" src="imgs/pic12.png" style="top:42%; left:37.16%; width:35.81%; z-index:-1" />
 
 
 <!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
@@ -142,13 +142,13 @@ using (reader)
 }
 ```
 
-<img class="slide-image" src="/imgs/pic13.png" style="top:19.39%; left:88.89%; width:15.21%; z-index:0" />
+<img class="slide-image" src="imgs/pic13.png" style="top:19.39%; left:88.89%; width:15.21%; z-index:0" />
 
 
 <!-- attr: { id:'', class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Reading Text Files
 ## [Demo]()
-<img class="slide-image" src="/imgs/pic14.png" style="top:52%; left:36.85%; width:30%; z-index:-1" />
+<img class="slide-image" src="imgs/pic14.png" style="top:52%; left:36.85%; width:30%; z-index:-1" />
 
 
 <!-- section start -->
@@ -156,7 +156,7 @@ using (reader)
 <!-- attr: { id:'', class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Writing Text Files
 ## Using the StreamWriter Class
-<img class="slide-image" src="/imgs/pic15.png" style="top:52%; left:27.82%; width:45%; z-index:-1" />
+<img class="slide-image" src="imgs/pic15.png" style="top:52%; left:27.82%; width:45%; z-index:-1" />
 
 
 <!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.9em' } -->
@@ -207,13 +207,13 @@ using (streamWriter)
 }
 ```
 
-<img class="slide-image" src="/imgs/pic16.png" style="top:30%; left:89.12%; width:16.53%; z-index:-1" />
+<img class="slide-image" src="imgs/pic16.png" style="top:30%; left:89.12%; width:16.53%; z-index:-1" />
 
 
 <!-- attr: { id:'', class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Writing Text Files
 ## [Demo]()
-<img class="slide-image" src="/imgs/pic17.png" style="top:52%; left:30.75%; width:40%; z-index:-1" />
+<img class="slide-image" src="imgs/pic17.png" style="top:52%; left:30.75%; width:40%; z-index:-1" />
 
 
 <!-- section start -->
@@ -248,7 +248,7 @@ Console.WriteLine(count);
 <!-- attr: { id:'', class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Counting Word Occurrences
 ## [Demo]()
-<img class="slide-image" src="/imgs/pic23.png" style="top:52%; left:21.89%; width:55%; z-index:-1" />
+<img class="slide-image" src="imgs/pic23.png" style="top:52%; left:21.89%; width:55%; z-index:-1" />
 
 
 <!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
@@ -299,7 +299,7 @@ finally
 <!-- attr: { id:'', class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Fixing Movie Subtitles
 ## [Demo]()
-<img class="slide-image" src="/imgs/pic24.png" style="top:52%; left:30%; width:42%; z-index:-1" />
+<img class="slide-image" src="imgs/pic24.png" style="top:52%; left:30%; width:42%; z-index:-1" />
 
 <!-- section start -->
 
@@ -316,7 +316,7 @@ finally
 <!-- attr: { id:'', class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Text Files
 ## Questions?
-<img class="slide-image" src="/imgs/pic25.png" style="top:49.66%; left:4.68%; width:38.79%; z-index:-1" />
+<img class="slide-image" src="imgs/pic25.png" style="top:49.66%; left:4.68%; width:38.79%; z-index:-1" />
 
 
 <!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
@@ -329,7 +329,7 @@ finally
     - [facebook.com/TelerikAcademy](facebook.com/TelerikAcademy)
   - Telerik Software Academy Forums
     - [forums.academy.telerik.com](forums.academy.telerik.com)
-<img class="slide-image" src="/imgs/pic26.png" style="top:60.37%; left:92.39%; width:13.45%; z-index:-1" />
-<img class="slide-image" src="/imgs/pic27.png" style="top:30.85%; left:68.14%; width:36.30%; z-index:-1" />
-<img class="slide-image" src="/imgs/pic28.png" style="top:46.32%; left:95.14%; width:10.85%; z-index:-1" />
-<img class="slide-image" src="/imgs/pic29.png" style="top:13.00%; left:92.85%; width:13.01%; z-index:-1" />
+<img class="slide-image" src="imgs/pic26.png" style="top:60.37%; left:92.39%; width:13.45%; z-index:-1" />
+<img class="slide-image" src="imgs/pic27.png" style="top:30.85%; left:68.14%; width:36.30%; z-index:-1" />
+<img class="slide-image" src="imgs/pic28.png" style="top:46.32%; left:95.14%; width:10.85%; z-index:-1" />
+<img class="slide-image" src="imgs/pic29.png" style="top:13.00%; left:92.85%; width:13.01%; z-index:-1" />
