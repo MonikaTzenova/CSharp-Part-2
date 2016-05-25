@@ -26,7 +26,7 @@
   - The `StreamWriter` Class
 - Handling I/O Exceptions
 
-<img class="slide-image" src="imgs/pic06.png" style="top:57.30%; left:76.72%; width:27.18%; z-index:-1; border-radius: 15px />
+<img class="slide-image" src="imgs/pic06.png" style="top:57.30%; left:76.72%; width:27.18%; z-index:-1; border-radius: 15px" />
 
 <!-- section start -->
 <!-- attr: { id:'', class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
@@ -279,8 +279,8 @@ Console.WriteLine(count);
 ```cs
 try
 {
-  StreamReader streamReader = new StreamReader("source.sub");
-  StreamWriter streamWriter = new StreamWriter("fixed.sub");
+  var streamReader = new StreamReader("source.sub");
+  var streamWriter = new StreamWriter("fixed.sub");
 
   string line;
   while ((line = streamReader.ReadLine()) != null)
