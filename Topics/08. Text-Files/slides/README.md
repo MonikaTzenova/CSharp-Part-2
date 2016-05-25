@@ -25,13 +25,15 @@
 - Writing Text Files
   - The `StreamWriter` Class
 - Handling I/O Exceptions
-<img class="slide-image" src="imgs/pic06.png" style="top:57.30%; left:76.72%; width:27.18%; z-index:-1" />
+
+<img class="slide-image" src="imgs/pic06.png" style="top:57.30%; left:76.72%; width:27.18%; z-index:-1; border-radius: 15px />
 
 <!-- section start -->
 <!-- attr: { id:'', class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # What Is Stream?
 ## Streams Basic Concepts
-<img class="slide-image" src="imgs/pic08.png" style="top:52%; left:35.79%; width:30%; z-index:-1" />
+
+<img class="slide-image" src="imgs/pic08.png" style="top:52%; left:35.79%; width:30%; z-index:-1; border-radius: 15px" />
 
 
 <!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
@@ -76,12 +78,12 @@
 # StreamReader Methods
 - `new StreamReader(fileName)`
   - Constructor for creating reader from given file
-- `StreamReader#ReadLine()`
+- `StreamReader.ReadLine()`
   - Reads a single text line from the stream
   - Returns `null` when end-of-file is reached
-- `StreamReader#ReadToEnd()`
+- `StreamReader.ReadToEnd()`
   - Reads all the text until the end of the stream
-- `StreamReader#Close()`
+- `StreamReader.Close()`
   - Closes the stream reader
 
 
@@ -105,7 +107,7 @@ StreamReader reader = new StreamReader(
 reader.Close();
 ```
 
-<!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.9em' } -->
+<!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.8em' } -->
 # Using `StreamReader` – Practices
 - The `StreamReader` instances should always be closed by calling the `Close()` method
   - Otherwise system resources can be lost
@@ -142,13 +144,12 @@ using (reader)
 }
 ```
 
-<img class="slide-image" src="imgs/pic13.png" style="top:19.39%; left:88.89%; width:15.21%; z-index:0" />
-
 
 <!-- attr: { id:'', class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Reading Text Files
 ## [Demo]()
-<img class="slide-image" src="imgs/pic14.png" style="top:52%; left:36.85%; width:30%; z-index:-1" />
+
+<img class="slide-image" src="imgs/pic14.png" style="top:52%; left:36.85%; width:30%; z-index:-1; border-radius: 15px" />
 
 
 <!-- section start -->
@@ -156,10 +157,11 @@ using (reader)
 <!-- attr: { id:'', class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Writing Text Files
 ## Using the StreamWriter Class
-<img class="slide-image" src="imgs/pic15.png" style="top:52%; left:27.82%; width:45%; z-index:-1" />
+
+<img class="slide-image" src="imgs/pic15.png" style="top:52%; left:27.82%; width:45%; z-index:-1; border-radius: 15px" />
 
 
-<!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.9em' } -->
+<!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.8em' } -->
 # The `StreamWriter` Class
 - `System.IO.StreamWriter`
   - Similar to `StreamReader`, but instead of reading, it provides writing functionality
@@ -180,15 +182,15 @@ StreamWriter streamWriter =
 
 <!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # StreamWriter Methods
-- `StreamWriter#Write()`
+- `StreamWriter.Write()`
   - Writes string or other object to the stream
   - Like `Console.Write()`
-- `StreamWriter#WriteLine()`
+- `StreamWriter.WriteLine()`
   - Like `Console.WriteLine()`
-- `StreamWriter#Flush()`
+- `StreamWriter.Flush()`
   - Flushes the internal buffers to the hard drive
     - Or the stream
-- `StreamWriter#AutoFlush`
+- `StreamWriter.AutoFlush`
   - Flush the internal buffer after each writing
 
 <!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
@@ -207,13 +209,13 @@ using (streamWriter)
 }
 ```
 
-<img class="slide-image" src="imgs/pic16.png" style="top:30%; left:89.12%; width:16.53%; z-index:-1" />
 
 
 <!-- attr: { id:'', class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Writing Text Files
 ## [Demo]()
-<img class="slide-image" src="imgs/pic17.png" style="top:52%; left:30.75%; width:40%; z-index:-1" />
+
+<img class="slide-image" src="imgs/pic17.png" style="top:52%; left:30.75%; width:40%; z-index:-1; border-radius: 15px" />
 
 
 <!-- section start -->
@@ -222,7 +224,7 @@ using (streamWriter)
 # Reading and Writing Text Files: _Examples_
 
 
-<!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.9em' } -->
+<!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.8em' } -->
 # Counting Word Occurrences – _Example_
 - Counting the number of occurrences of the word "**foundme**" in a text file:
 
@@ -248,10 +250,10 @@ Console.WriteLine(count);
 <!-- attr: { id:'', class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Counting Word Occurrences
 ## [Demo]()
-<img class="slide-image" src="imgs/pic23.png" style="top:52%; left:21.89%; width:55%; z-index:-1" />
+<!-- <img class="slide-image" src="imgs/pic23.png" style="top:52%; left:21.89%; width:55%; z-index:-1" /> -->
 
 
-<!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.9em' } -->
 # Reading Subtitles – _Example_
 
 - We are given a standard movie subtitles file:
@@ -270,7 +272,7 @@ Console.WriteLine(count);
 .....
 ```
 
-<!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'font-style: 0.9em' } -->
+<!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'font-style: 0.8em' } -->
 # Fixing Subtitles – _Example_
 - Read subtitles file and fix it’s timing:
 
@@ -299,11 +301,12 @@ finally
 <!-- attr: { id:'', class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Fixing Movie Subtitles
 ## [Demo]()
-<img class="slide-image" src="imgs/pic24.png" style="top:52%; left:30%; width:42%; z-index:-1" />
+
+<img class="slide-image" src="imgs/pic24.png" style="top:52%; left:30%; width:42%; z-index:-1; border-radius: 15px" />
 
 <!-- section start -->
 
-<!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.9em' } -->
 # Summary
 - Streams are the main I/O mechanismsin .NET
 - The `StreamReader` class and `ReadLine()` method are used to read text files
@@ -316,7 +319,6 @@ finally
 <!-- attr: { id:'', class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Text Files
 ## Questions?
-<img class="slide-image" src="imgs/pic25.png" style="top:49.66%; left:4.68%; width:38.79%; z-index:-1" />
 
 
 <!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
@@ -332,4 +334,5 @@ finally
 <img class="slide-image" src="imgs/pic26.png" style="top:60.37%; left:92.39%; width:13.45%; z-index:-1" />
 <img class="slide-image" src="imgs/pic27.png" style="top:30.85%; left:68.14%; width:36.30%; z-index:-1" />
 <img class="slide-image" src="imgs/pic28.png" style="top:46.32%; left:95.14%; width:10.85%; z-index:-1" />
-<img class="slide-image" src="imgs/pic29.png" style="top:13.00%; left:92.85%; width:13.01%; z-index:-1" />
+
+<!-- img class="slide-image" src="imgs/pic29.png" style="top:13.00%; left:92.85%; width:13.01%; z-index:-1" /> -->
