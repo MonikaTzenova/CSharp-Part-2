@@ -471,7 +471,7 @@ static void TestTryFinally()
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # Exceptions – Best Practices
 - `catch` blocks should begin with the exceptions **lowest in the hierarchy**
-  - And c**ontinue with the more general exceptions**
+  - And **continue with the more general exceptions**
   - Otherwise a compilation error will occur
 - Each `catch` block should handle only these exceptions which it expects
   - If a method is not competent to handle an exception, it should be left unhandled
@@ -511,6 +511,7 @@ static void TestTryFinally()
 - Try-finally ensures given code block is always executed (even when an exception is thrown)
 
 
+<!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Exception Handling
 ## Questions? -->
