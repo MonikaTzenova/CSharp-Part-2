@@ -146,7 +146,7 @@ class ExceptionsExample
 - The `Message` property gives brief description of the problem
 - The `StackTrace` property is extremely useful when identifying the reason caused the exception
 
-```bash
+```
 Exception caught: Input string was not in a correct format.
    at System.Number.Parseint(String s, NumberStyles style, NumberFormatInfo info)
    at System.int.Parse(String s)
