@@ -146,7 +146,7 @@ class ExceptionsExample
 - The `Message` property gives brief description of the problem
 - The `StackTrace` property is extremely useful when identifying the reason caused the exception
 
-```bash
+```
 Exception caught: Input string was not in a correct format.
    at System.Number.Parseint(String s, NumberStyles style, NumberFormatInfo info)
    at System.int.Parse(String s)
@@ -471,7 +471,7 @@ static void TestTryFinally()
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # Exceptions – Best Practices
 - `catch` blocks should begin with the exceptions **lowest in the hierarchy**
-  - And c**ontinue with the more general exceptions**
+  - And **continue with the more general exceptions**
   - Otherwise a compilation error will occur
 - Each `catch` block should handle only these exceptions which it expects
   - If a method is not competent to handle an exception, it should be left unhandled
@@ -511,6 +511,7 @@ static void TestTryFinally()
 - Try-finally ensures given code block is always executed (even when an exception is thrown)
 
 
+<!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Exception Handling
 ## Questions? -->
@@ -518,11 +519,11 @@ static void TestTryFinally()
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # Free Trainings @ Telerik Academy
-- “C# Programming @ Telerik Academy
-    - [csharp advanced course](http://academy.telerik.com/student-courses/programming/csharp-programming-part-2/about)
-  - Telerik Software Academy
-    - [academy.telerik.com](academy.telerik.com)
-  - Telerik Academy @ Facebook
-    - [facebook.com/TelerikAcademy](facebook.com/TelerikAcademy)
-  - Telerik Software Academy Forums
-    - forums.academy.telerik.com
+- C# Programming @ Telerik Academy
+  - [CSharp Advanced course](http://academy.telerik.com/student-courses/programming/csharp-programming-part-2/about)
+- Telerik Software Academy
+  - [academy.telerik.com](http://academy.telerik.com)
+- Telerik Academy @ Facebook
+  - [facebook.com/TelerikAcademy](https://facebook.com/TelerikAcademy)
+- Telerik Software Academy Forums
+  - [forums.academy.telerik.com](https://telerikacademy.com/Forum/Home)

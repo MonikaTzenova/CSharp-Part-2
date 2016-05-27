@@ -1,5 +1,5 @@
 <!-- section start -->
-<!-- attr: { id:'', class:'slide-title', showInPresentation:true, hasScriptWrapper: true, style:'' } -->
+<!-- attr: { class:'slide-title', showInPresentation:true, hasScriptWrapper: true } -->
 # Text Files
 ## Reading and Writing Text Files
 <img class="slide-image" src="imgs/pic00.png" style="top:52.89%; left:69.53%; width:33.89%; z-index:-1" />
@@ -16,7 +16,7 @@
 
 
 <!-- section start -->
-<!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # Table of Contents
 - What is Stream?
   - Stream Basics
@@ -29,14 +29,14 @@
 <img class="slide-image" src="imgs/pic06.png" style="top:57.30%; left:76.72%; width:27.18%; z-index:-1; border-radius: 15px" />
 
 <!-- section start -->
-<!-- attr: { id:'', class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
 # What Is Stream?
 ## Streams Basic Concepts
 
 <img class="slide-image" src="imgs/pic08.png" style="top:52%; left:35.79%; width:30%; z-index:-1; border-radius: 15px" />
 
 
-<!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # What is Stream?
 - Stream is the natural way to transfer data in the computer world
 - To read or write a file, we open a stream connected to the file and access the data through the stream
@@ -45,7 +45,7 @@
 <img class="slide-image" src="imgs/pic11.png" style="top:47.60%; left:79.20%; width:25.00%; z-index:-1" />
 
 
-<!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # Streams Basics
 - Streams are used for reading and writing data into and from devices
 - Streams are **ordered sequences of bytes**
@@ -58,12 +58,12 @@
 
 
 <!-- section start -->
-<!-- attr: { id:'', class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
 # Reading Text Files
 <img class="slide-image" src="imgs/pic12.png" style="top:42%; left:37.16%; width:35.81%; z-index:-1" />
 
 
-<!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # The `StreamReader` Class
 - `System.IO.StreamReader`
   - The easiest way to read a text file
@@ -74,7 +74,7 @@
   - Works like `Console.Read()` / `ReadLine()` but over text files
 
 
-<!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # StreamReader Methods
 - `new StreamReader(fileName)`
   - Constructor for creating reader from given file
@@ -87,7 +87,7 @@
   - Closes the stream reader
 
 
-<!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # Reading a Text File
 - Reading a text file and printing its content to the console:
 
@@ -107,7 +107,7 @@ StreamReader reader = new StreamReader(
 reader.Close();
 ```
 
-<!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.8em' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.8em' } -->
 # Using `StreamReader` – Practices
 - The `StreamReader` instances should always be closed by calling the `Close()` method
   - Otherwise system resources can be lost
@@ -123,7 +123,7 @@ using (<stream object>)
   - It automatically calls the `Close()` **after the using** construction is completed
 
 
-<!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # Reading a Text File – _Example_
 - Read and display a text file line by line:
 
@@ -145,7 +145,7 @@ using (reader)
 ```
 
 
-<!-- attr: { id:'', class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 # Reading Text Files
 ## [Demo]()
 
@@ -154,14 +154,14 @@ using (reader)
 
 <!-- section start -->
 
-<!-- attr: { id:'', class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
 # Writing Text Files
 ## Using the StreamWriter Class
 
 <img class="slide-image" src="imgs/pic15.png" style="top:52%; left:27.82%; width:45%; z-index:-1; border-radius: 15px" />
 
 
-<!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.8em' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.8em' } -->
 # The `StreamWriter` Class
 - `System.IO.StreamWriter`
   - Similar to `StreamReader`, but instead of reading, it provides writing functionality
@@ -180,7 +180,7 @@ StreamWriter streamWriter =
 	new StreamWriter(filename, false, Encoding.UTF8);
 ```
 
-<!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # StreamWriter Methods
 - `StreamWriter.Write()`
   - Writes string or other object to the stream
@@ -193,7 +193,7 @@ StreamWriter streamWriter =
 - `StreamWriter.AutoFlush`
   - Flush the internal buffer after each writing
 
-<!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # Writing to a Text File – _Example_
 - _Exampel:_ Create text file named "**numbers.txt**" and print in it the numbers from `1` to `20` (one per line):
 
@@ -211,7 +211,7 @@ using (streamWriter)
 
 
 
-<!-- attr: { id:'', class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 # Writing Text Files
 ## [Demo]()
 
@@ -220,11 +220,11 @@ using (streamWriter)
 
 <!-- section start -->
 
-<!-- attr: { id:'', class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
 # Reading and Writing Text Files: _Examples_
 
 
-<!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.8em' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.8em' } -->
 # Counting Word Occurrences – _Example_
 - Counting the number of occurrences of the word "**foundme**" in a text file:
 
@@ -247,13 +247,13 @@ Console.WriteLine(count);
 <div class="fragment balloon" style="top:68.30%; left:67.88%; width:31.44%">What is missing in this code?</div>
 
 
-<!-- attr: { id:'', class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 # Counting Word Occurrences
 ## [Demo]()
 <!-- <img class="slide-image" src="imgs/pic23.png" style="top:52%; left:21.89%; width:55%; z-index:-1" /> -->
 
 
-<!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.9em' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.9em' } -->
 # Reading Subtitles – _Example_
 
 - We are given a standard movie subtitles file:
@@ -272,7 +272,7 @@ Console.WriteLine(count);
 .....
 ```
 
-<!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'font-style: 0.8em' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-style: 0.8em' } -->
 # Fixing Subtitles – _Example_
 - Read subtitles file and fix it’s timing:
 
@@ -298,7 +298,7 @@ finally
 <div class="fragment balloon" style="top:66%; left:48%; width:43.20%">**FixLine(line)** perform fixes on the time offsets: multiplication or/and addition with constant</div>
 
 
-<!-- attr: { id:'', class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 # Fixing Movie Subtitles
 ## [Demo]()
 
@@ -306,31 +306,31 @@ finally
 
 <!-- section start -->
 
-<!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.9em' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.9em' } -->
 # Summary
-- Streams are the main I/O mechanismsin .NET
+- Streams are the main I/O mechanism in .NET
 - The `StreamReader` class and `ReadLine()` method are used to read text files
 - The `StreamWriter` class and `WriteLine()` method are used to write text files
 - Always put file handling in `using(…)` block
 - Exceptions are unusual events or error conditions
   - Can be handled by `try-catch-finally` blocks
 
-
-<!-- attr: { id:'', class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- section start -->
+<!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
 # Text Files
 ## Questions?
 
 
-<!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # Free Trainings @ Telerik Academy
 - C# Programming @ Telerik Academy
-    - [csharpfundamentals.telerik.com](csharpfundamentals.telerik.com)
-  - Telerik Software Academy
-    - [academy.telerik.com](academy.telerik.com)
-  - Telerik Academy @ Facebook
-    - [facebook.com/TelerikAcademy](facebook.com/TelerikAcademy)
-  - Telerik Software Academy Forums
-    - [forums.academy.telerik.com](forums.academy.telerik.com)
+  - [csharpfundamentals.telerik.com](csharpfundamentals.telerik.com)
+- Telerik Software Academy
+  - [academy.telerik.com](academy.telerik.com)
+- Telerik Academy @ Facebook
+  - [facebook.com/TelerikAcademy](facebook.com/TelerikAcademy)
+- Telerik Software Academy Forums
+    - [forums.academy.telerik.com](https://telerikacademy.com/Forum/Home)
 <img class="slide-image" src="imgs/pic26.png" style="top:60.37%; left:92.39%; width:13.45%; z-index:-1" />
 <img class="slide-image" src="imgs/pic27.png" style="top:30.85%; left:68.14%; width:36.30%; z-index:-1" />
 <img class="slide-image" src="imgs/pic28.png" style="top:46.32%; left:95.14%; width:10.85%; z-index:-1" />
