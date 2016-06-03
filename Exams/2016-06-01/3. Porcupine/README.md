@@ -8,7 +8,7 @@
 
 You are given a two-dimensional map that represents a forest. The map structure is like a jagged array, and it looks like this:  
 
-![](images\MapStructure.JPG)
+![](images/MapStructure.jpg)
 
 The terrain follows a pattern. You are given the **base columns count**, which represents the **columns count for the first row**. **In our case**, the base columns count is **2**. You are also given the **total number of rows** for the terrain. **In our case**, the total number of rows is **8**.  
 For the first row we have **(1 \* (base columns count))** columns.  
@@ -34,12 +34,12 @@ There's a catch - **if the porcupine meets a rabbit on his path, he must stop mo
 Last catch - if an animal is ordered to move N steps, but the result position is outside the boundaries of the map, the animal must continue his movement starting from the opposite side of the current dimension he is moving in.  
 _**Example**:_ If the rabbit is at position **[3][1]** (where 3 is the rows index, and 1 is the columns index), and he must jump **4 steps** (N), facing the direction **"LEFT"**, he will overflow and he must calculate his final position in such a way, that he counts the **M** cells he must jump over before the overflow, and then he continues its jump for the next **N - M** cells. As a result, the rabbit's final position will be **[3][5]**.
 
-![](images\RabbitOverflow.JPG)   
+![](images/RabbitOverflow.jpg)   
 
 **The same is applied for the porcupine movements**:  
 _Example: The porcupine is at position [2][2] and he must move 4 steps, facing "TOP". As a result, his position will be [4][2]._  
 
-![](images\PorcupineOverflow.JPG)  
+![](images/PorcupineOverflow.jpg)  
 
 So your task is to build the map and move the animals by the commands you will be given. Count the points collected by each of the two animals and when you receive "END" as a command - you will have to print a final result for one of the following 3 cases:   
 
