@@ -67,7 +67,7 @@
 
 <p>You are given a two-dimensional map that represents a forest. The map structure is like a jagged array, and it looks like this:  </p>
 
-<p><a href="images/MapStructure.JPG" target="_blank"><img src="images/MapStructure.JPG" alt="" style="max-width:100%;"></a></p>
+<p><a href="images/MapStructure.jpg" target="_blank"><img src="images/MapStructure.jpg" alt="" style="max-width:100%;"></a></p>
 
 <p>The terrain follows a pattern. You are given the <strong>base columns count</strong>, which represents the <strong>columns count for the first row</strong>. <strong>In our case</strong>, the base columns count is <strong>2</strong>. You are also given the <strong>total number of rows</strong> for the terrain. <strong>In our case</strong>, the total number of rows is <strong>8</strong>.<br>
 For the first row we have <strong>(1 * (base columns count))</strong> columns.<br>
@@ -93,12 +93,12 @@ Which means that if the rabbit is currently at position <strong>[Row = 1][Col = 
 <p>Last catch - if an animal is ordered to move N steps, but the result position is outside the boundaries of the map, the animal must continue his movement starting from the opposite side of the current dimension he is moving in.<br>
 <em><strong>Example</strong>:</em> If the rabbit is at position <strong>[3][1]</strong> (where 3 is the rows index, and 1 is the columns index), and he must jump <strong>4 steps</strong> (N), facing the direction <strong>"LEFT"</strong>, he will overflow and he must calculate his final position in such a way, that he counts the <strong>M</strong> cells he must jump over before the overflow, and then he continues its jump for the next <strong>N - M</strong> cells. As a result, the rabbit's final position will be <strong>[3][5]</strong>.</p>
 
-<p><a href="images/RabbitOverflow.JPG" target="_blank"><img src="images/RabbitOverflow.JPG" alt="" style="max-width:100%;"></a>   </p>
+<p><a href="images/RabbitOverflow.jpg" target="_blank"><img src="images/RabbitOverflow.jpg" alt="" style="max-width:100%;"></a>   </p>
 
 <p><strong>The same is applied for the porcupine movements</strong>:<br>
 <em>Example: The porcupine is at position [2][2] and he must move 4 steps, facing "TOP". As a result, his position will be [4][2].</em>  </p>
 
-<p><a href="images/PorcupineOverflow.JPG" target="_blank"><img src="images/PorcupineOverflow.JPG" alt="" style="max-width:100%;"></a>  </p>
+<p><a href="images/PorcupineOverflow.jpg" target="_blank"><img src="images/PorcupineOverflow.jpg" alt="" style="max-width:100%;"></a>  </p>
 
 <p>So your task is to build the map and move the animals by the commands you will be given. Count the points collected by each of the two animals and when you receive "END" as a command - you will have to print a final result for one of the following 3 cases:<br>
 1. If the rabbit's score is higher than that of the porcupine - print a line by the given pattern:<br>
