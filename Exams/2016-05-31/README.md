@@ -3,7 +3,7 @@
 ## C# Advanced - 31 May 2016
 
 ### Task 1 - Messages
-#### [Description](./1. Messages/README.md) / [Author's Solution](./01. Messages/Startup.cs)
+#### [Description](./1. Messages/README.md) / [Author's Solution](./1. Messages/Startup.cs)
 
 ### Task 2 - Dancing Moves
 #### [Description](./2. DancingMoves/README.md) / [Author's Solution](./2. DancingMoves/Startup.cs)
