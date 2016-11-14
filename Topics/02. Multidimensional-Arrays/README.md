@@ -12,10 +12,10 @@
 </div>
 
 <!-- section start -->
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 42px' } -->
+<!-- attr: { class:'table-of-contents', showInPresentation:true, hasScriptWrapper:true, style:'font-size: 42px' } -->
 # Table of Contents
 - [Matrices and Multidimensional Arrays](#multidimensional)
-  - [Declaring](#delaring)
+  - [Declaring](#declaring)
   - [Usage](#usage)
 - Jagged Arrays
   - [Declaring](#jaggeddeclare)
@@ -27,20 +27,20 @@
 
 <!-- section start -->
 <!-- attr: { id:'multidimensional', class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'font-size: 42px' } -->
-# <a id="multidimensional"></a> Multidimensional Arrays
+# Multidimensional Arrays
 ## Using Array of Arrays, Matrices and Cubes
 <!-- <img class="slide-image" src="imgs/pic06.png" style="top:55%; left:34%; width:30%; z-index:-1" /> -->
 
 <!-- attr: {  showInPresentation:true, hasScriptWrapper:true, style:'font-size: 42px' } -->
-# What is a Multidimensional Array?
+# What is a<br/>Multidimensional Array?
 - **Multidimensional arrays** have more than one dimension (2, 3, … n)
   - The most important multidimensional arrays are the 2-dimensional
     - Known as **matrices** or **tables**
 - _Example_ of matrix of integers with 2 rows and 4 columns:
-<!-- <img class="slide-image" showInPresentation="true" src="imgs/example-array.png" style="top:60%; left:30%; width:40%; z-index:-1" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/example-array.png" style="top:65%; left:30%; width:40%; z-index:-1" /> -->
 
-<!-- attr: { id:'delaring',  showInPresentation:true, hasScriptWrapper:true, style:'font-size: 42px' } -->
-# <a id="delaring"></a> Declaring and Creating Multidimensional Arrays
+<!-- attr: { id:'declaring',  showInPresentation:true, hasScriptWrapper:true, style:'font-size: 42px' } -->
+# Declaring and Creating Multidimensional Arrays
 - Declaring multidimensional arrays:
 
 ```cs
@@ -59,7 +59,7 @@ string[,,] stringCube = new string[5, 5, 5];
 ```
 
 <!-- attr: { id:'usage',  showInPresentation:true, hasScriptWrapper:true, style:'font-size: 42px' } -->
-# <a id="usage"></a> Initializing Multidimensional Arrays with Values
+# Initializing Multidimensional<br/>Arrays with Values
 - Creating and initializing with values multidimensional array:
 
 ```cs
@@ -137,7 +137,7 @@ for (int row = 0; row < matrix.GetLength(0); row++)
 
 <!-- attr: {  class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'font-size: 42px' } -->
 <!-- # Reading and Printing Matrices
-## [Demo](https://github.com/TelerikAcademy/CSharp-Part-2/tree/master/Topics/02.%20Multidimensional-Arrays/demos/ReadWriteMatrix) -->
+## [Demo](./demos/ReadWriteMatrix) -->
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic07.png" style="top:55%; left:35%; width:30%; z-index:-1" /> -->
 
 
@@ -172,7 +172,7 @@ for (int row = 0; row < matrix.GetLength(0) - 1; row++)
 
 <!-- attr: {  class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'font-size: 42px' } -->
 <!-- # Maximal Platform
-## [Demo](https://github.com/TelerikAcademy/CSharp-Part-2/tree/master/Topics/02.%20Multidimensional-Arrays/demos/MaxPlatform) -->
+## [Demo](./demos/MaxPlatform) -->
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic08.png" style="top:55%; left:35%; width:30%; z-index:-1" /> -->
 
 
@@ -187,7 +187,7 @@ for (int row = 0; row < matrix.GetLength(0) - 1; row++)
 
 
 <!-- attr: { id:'jaggeddeclare',  showInPresentation:true, hasScriptWrapper:true, style:'font-size: 38px' } -->
-# <a id="jaggeddeclare"></a> Jagged Arrays
+# Jagged Arrays
 - Jagged arrays are like multidimensional arrays
   - But each dimension has different size
   - A jagged array is array of arrays
@@ -225,13 +225,13 @@ for (int i = 0; i < n; i++)
 
 <!-- attr: {  class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'font-size: 42px' } -->
 <!-- # Jagged Arrays
-## [Demo](https://github.com/TelerikAcademy/CSharp-Part-2/tree/master/Topics/02.%20Multidimensional-Arrays/demos/JaggedArrays) -->
+## [Demo](./demos/JaggedArrays) -->
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic12.png" style="top:55%; left:45.38%; width:30%; z-index:-1" /> -->
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic13.png" style="top:55%; left:25%; width:15%; z-index:-1" /> -->
 
 
 <!-- attr: { id:'jaggedusage',  showInPresentation:true, hasScriptWrapper:true, style:'font-size: 42px' } -->
-# <a id="jaggedusage"></a> _Example_ of Jagged Arrays
+# _Example_ of Jagged Arrays
 - Check a set of numbers and group them by their remainder when divided by `3` (`0, 1 and 2`)
 - _Example_: `0, 1, 4, 113, 55, 3, 1, 2, 66, 557, 124, 2`
 - First we need to count the numbers
@@ -273,13 +273,13 @@ foreach (var number in numbers)
 
 <!-- attr: {  class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'font-size: 42px' } -->
 <!-- # Pascal's Triangle
-## [Demo](https://github.com/TelerikAcademy/CSharp-Part-2/tree/master/Topics/02.%20Multidimensional-Arrays/demos/PascalTriangle) -->
+## [Demo](./demos/PascalTriangle) -->
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pascal1.gif" style="top:53%; left:32%; width:36%; z-index:-1" /> -->
 
 
 <!-- attr: {  class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'font-size: 42px' } -->
 <!-- # Matrix Multiplication
-## [Demo](https://github.com/TelerikAcademy/CSharp-Part-2/tree/master/Topics/02.%20Multidimensional-Arrays/demos/Matrix%20Multiplication) -->
+## [Demo](./demos/Matrix%20Multiplication) -->
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic12.png" style="top:55%; left:30%; width:40%; z-index:-1" /> -->
 
 
@@ -292,7 +292,7 @@ foreach (var number in numbers)
 
 
 <!-- attr: { id:'arrayclass', showInPresentation:true, hasScriptWrapper:true, style:'font-size: 42px' } -->
-# <a id="arrayclass"></a>The Array Class
+# The Array Class
 - The `System.Array` class
   - Parent of all arrays
   - All arrays inherit from it
@@ -333,7 +333,7 @@ foreach (var number in numbers)
 
 <!-- section start -->
 <!-- attr: { id:'sorting', class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'font-size: 42px' } -->
-# <a id="sorting"></a> Sorting Arrays
+# Sorting Arrays
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic19.png" style="top:40%; left:30%; width:40%; z-index:-1" /> -->
 
 
@@ -400,7 +400,7 @@ Array.Sort(students, (x, y) => x.Name.CompareTo(y.Name));
 
 <!-- attr: {  class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'font-size: 42px' } -->
 <!-- # Sorting with IComparer&lt;T> and Lambda Expressions
-## [Demo](https://github.com/TelerikAcademy/CSharp-Part-2/tree/master/Topics/02.%20Multidimensional-Arrays/demos/SortingIComparer) -->
+## [Demo](./demos/SortingIComparer) -->
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic21.png" style="top:65%; left:25%; width:14.5%; z-index:-1" /> -->
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic22.png" style="top:65%; left:53.83%; width:23%; z-index:-1" /> -->
 
@@ -458,7 +458,7 @@ static void Main()
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'font-size: 42px' } -->
 <!-- # Binary Search
-## [Demo](https://github.com/TelerikAcademy/CSharp-Part-2/tree/master/Topics/02.%20Multidimensional-Arrays/demos/BinarySearch) -->
+## [Demo](./demos/BinarySearch) -->
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic25.png" style="top:55%; left:15%; width:70%; z-index:-1" /> -->
 
 
@@ -472,7 +472,7 @@ static void Main()
 
 
 <!-- attr: { id:'advices',  showInPresentation:true, hasScriptWrapper:true, style:'font-size: 42px' } -->
-# <a id="advices"></a> Advices for Working with Arrays
+# Advices<br/>for Working with Arrays
 - When a given method returns an array, it should return an empty array (array with 0 elements) instead of `null`
 - Arrays are passed by reference
   - To be sure that given method will not change the passed array, pass a copy of it
