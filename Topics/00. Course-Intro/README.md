@@ -42,7 +42,7 @@
 
 
 <!-- attr: { id: 'next', showInPresentation: true } -->
-# <a id="next"></a>What's Coming Next
+# What's Coming Next
 - C# Advanced
     - Continuation of C# Fundamentals
     - Fundamentals of programming
@@ -55,38 +55,34 @@
 
 
 <!-- attr: { id: 'topics', showInPresentation: true, hasScriptWrapper: true} -->
-# <a id="topics"></a>Course Topics
-
-- **Arrays**
-    - Working with arrays
-    - Algorithms on sequences
+# Course Topics
 - **Multidimensional Arrays**
     - Matrices, cubes etc.
     - Algorithms on matrices
 - **Methods**
     - Creating and calling methods
     - Return type, arguments, overloading
-
-<!-- attr: { showInPresentation: true, hasScriptWrapper: true} -->
-# Course Topics
 - **Numeral Systems**
     - Binary, decimal, hexadecimal
     - Representation of numbers
+
+<!-- attr: { showInPresentation: true, hasScriptWrapper: true} -->
+# Course Topics
 - **Creating and Using Objects**
     - What is object?
     - Using .NET standard classes
 - **Exception Handling**
     - What are exception?
     - Catching and throwing exceptions
-
-<!-- attr: { showInPresentation: true, hasScriptWrapper: true} -->
-# Course Topics
 - **Strings and Text Processing**
     - Working with strings
     - Building strings
-- **Text Files**
+
+<!-- attr: { showInPresentation: true, hasScriptWrapper: true} -->
+# Course Topics
+- **Working with Text Files**
     - Reading and writing text files
-- **Practical Exam Preparation**
+- **Workshops**
     - Solving the last year's problems
 - **Practical Exam**
     - 5 problems for 6 hours
@@ -113,10 +109,10 @@
 - Exam: 6 hours, 5 problems, http://bgcoder.com
 - Allocation
   - Time frame
-    - May 2016
-  - Exam: **May 31st** and **June 1st**
+    - November - December 2016
+  - Exam: **7th December**
 
-<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic27.png" style="top:57%; left:55%; width:35%; border-radius: 15px" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic27.png" style="top:60%; left:65%; width:35%; border-radius: 15px" /> -->
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation: true, hasScriptWrapper: true} -->
@@ -132,21 +128,22 @@
 
 - **Exams** measure the individual performance
   - Serve as filter for the most skillful people
-  - Score formed by **many components**:
-    - Exam results, forums activity, homework, lectures attendance, etc.
+- Score formed by **many components**:
+  - Exam results, forums activity, homework, lectures attendance, etc.
 
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic34.png" style="top:50%; left:7.49%; width:40.55%; border-radius: 15px" /> -->
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic35.png" style="top:50%; left:57.17%; width:44.57%; border-radius: 15px" /> -->
 
 
 <!-- attr: { showInPresentation: true, hasScriptWrapper: true} -->
-# Scoring System for C# Advanced
+# Scoring System for<br/>C# Advanced
 
 - **Practical Exam** – **75%**
      - Serves as primary **pass/fail** criteria
 - **Homework** – **15%**
 - **Attendance** in class – **5%**
-- **Helping** the **other** students – bonus up to **5%**
+- **Helping** the **other** students
+  - bonus up to **5%**
 
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic36.png" style="top:55%; left:75%; width:15%; border-radius: 15px" /> -->
 
@@ -217,6 +214,8 @@
 - Submit all your homework in our **judge system**
   - [bgcoder.com](http://bgcoder.com)
   - You will get real-time feedback for all the tasks
+- **For online participants**: Have all your homework submitted by **01 December 2016**
+  - Except the homework for `Exceptions`
 
 
 
