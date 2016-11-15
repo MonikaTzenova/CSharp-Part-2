@@ -12,7 +12,7 @@
 </div>
 
 <!-- section start -->
-<!-- attr: { class:'table-of-contents', showInPresentation:true, hasScriptWrapper:true, style:'font-size: 42px' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 42px' } -->
 # Table of Contents
 - [Matrices and Multidimensional Arrays](#multidimensional)
   - [Declaring](#declaring)

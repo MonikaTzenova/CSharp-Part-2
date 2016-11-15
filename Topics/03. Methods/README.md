@@ -13,7 +13,7 @@
 </div>
 
 
-<!-- attr: { class:'table-of-contents' ,showInPresentation:true, hasScriptWrapper:true } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # Table of Contents
 - Using Methods
   - [What is a Method? Why to Use Methods?](#method)
