@@ -12,7 +12,7 @@
 </div>
 
 <!-- section start -->
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 42px' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # Table of Contents
 - [Matrices and Multidimensional Arrays](#multidimensional)
   - [Declaring](#declaring)
@@ -26,7 +26,7 @@
 - [Advices](#advices)
 
 <!-- section start -->
-<!-- attr: { id:'multidimensional', class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'font-size: 42px' } -->
+<!-- attr: { id:'multidimensional', class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
 # Multidimensional Arrays
 ## Using Array of Arrays, Matrices and Cubes
 <!-- <img class="slide-image" src="imgs/pic06.png" style="top:55%; left:34%; width:30%; z-index:-1" /> -->
