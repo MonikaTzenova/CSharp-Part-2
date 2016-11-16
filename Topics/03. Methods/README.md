@@ -589,7 +589,7 @@ _(example continues)_
 ```
 
 
-<!-- attr: {  class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'font-size: 42px' } -->
+<!-- attr: {  class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Data Validation
 ## [Demo](https://github.com/TelerikAcademy/CSharp-Part-2/tree/master/Topics/03.%20Methods/demos/DataValidation) -->
 
@@ -599,13 +599,13 @@ _(example continues)_
 
 
 <!-- section start -->
-<!-- attr: {  class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'font-size: 42px' } -->
+<!-- attr: {  class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Overloading Methods
 ## Multiple Methods with the Same Name
 <img showInPresentation="true" class="slide-image" src="imgs/pic37.png" style="top:55%; left:25%; width:50%;border-radius:10px; border:2px solid white; z-index:-1" /> -->
 
 
-<!-- attr: {  showInPresentation:true, hasScriptWrapper:true, style:'font-size: 42px' } -->
+<!-- attr: {  showInPresentation:true, hasScriptWrapper:true } -->
 # Overloading Methods
 - What means "to **overload** a method name"?
   - Use the same method name for multiple methods with **different signature** (parameters)
@@ -630,13 +630,13 @@ static void Print(string text, int number)
 
 
 <!-- section start -->
-<!-- attr: {  class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'font-size: 42px' } -->
+<!-- attr: {  class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Variable Number of Parameters
 
 <img showInPresentation="true" class="slide-image" src="imgs/pic38.png" style="top:50%; left:27%; width:45%;border-radius:10px; border:2px solid white; z-index:-1" /> -->
 
 
-<!-- attr: {  showInPresentation:true, hasScriptWrapper:true, style:'font-size: 42px' } -->
+<!-- attr: {  showInPresentation:true, hasScriptWrapper:true } -->
 # Variable Number of<br/>Parameters
 - A method in C# can take variable number of parameters by specifying the `params` keyword
 
@@ -659,7 +659,7 @@ static void Main()
 
 
 <!-- section start -->
-<!-- attr: { id:'best',  showInPresentation:true, hasScriptWrapper:true, style:'font-size: 42px' } -->
+<!-- attr: { id:'best',  showInPresentation:true, hasScriptWrapper:true } -->
 # Methods – Best Practices
 - Each method should perform a **single**, **well-defined** task
 - Method’s name should **describe that task** in a clear and non-ambiguous way
@@ -671,7 +671,7 @@ static void Main()
   - Split them to several shorter methods
 
 
-<!-- attr: {  showInPresentation:true, hasScriptWrapper:true, style:'font-size: 42px' } -->
+<!-- attr: {  showInPresentation:true, hasScriptWrapper:true } -->
 # Summary
 - Break large programs into simple methods that solve small sub-problems
 - Methods consist of declaration and body
@@ -680,7 +680,7 @@ static void Main()
   - Parameters take actual values when calling a method
 - Methods can return a value or nothing
 
-<!-- attr: { class:'slide-section', showInPresentation: true, hasScriptWrapper: true, style:'font-size: 42px' } -->
+<!-- attr: { class:'slide-section', showInPresentation: true, hasScriptWrapper: true } -->
 <!-- # C# Methods
 ## Questions? -->
 
