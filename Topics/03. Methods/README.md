@@ -50,8 +50,6 @@
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic06.png" style="top:45.84%; left:76.72%; width:27.84%; z-index:-1" /> -->
 
 
-
-
 <!-- section start -->
 <!-- attr: {  class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Declaring and Creating Methods
@@ -102,17 +100,17 @@ static void PrintLogo()
 - Each method has a **body**
   - It contains the programming code
   - Surrounded by `{` and `}`
-<div class="fragment balloon" style="top:22%; left:60%;">Method body</div>
+<div class="fragment balloon" style="top:33%; left:65%;">Method body</div>
 
 
 
-<!-- attr: {  showInPresentation:true, hasScriptWrapper:true } -->
+<!-- attr: {  showInPresentation:true, hasScriptWrapper:true, style:'font-size:0.9em' } -->
 <!-- # Declaring and Creating Methods -->
 
 ```cs
 using System;
 
-class Method_Example_
+class MethodExample
 {
     static void PrintLogo()
     {
@@ -140,9 +138,9 @@ class Method_Example_
 <!-- attr: { id:'calling', showInPresentation:true, hasScriptWrapper:true } -->
 # <a id="calling"></a> Calling Methods
 - To call a method, simply use:
-  - The method’s name
-  - Parentheses (don’t forget them!)
-  - A semicolon (`;`)
+  1. The method’s name
+  1. Parentheses (don’t forget them!)
+  1. A semicolon (`;`)
 
 ```cs
 PrintLogo();
@@ -186,7 +184,7 @@ static void Main()
 
 
 <!-- attr: { id:'parameters', showInPresentation:true, hasScriptWrapper:true } -->
-# <a id="parameters"></a> Method Parameters
+# Method Parameters
 - To pass information to a method, you can use `parameters`(also known as `arguments`)
   - You can pass zero or several input values
   - You can pass values of different types
@@ -195,17 +193,17 @@ static void Main()
 - Parameters can change the method behavior depending on the passed values
 
 
-<!-- attr: {  showInPresentation:true, hasScriptWrapper:true } -->
-# Defining and Using Method Parameters
+<!-- attr: {  showInPresentation:true, hasScriptWrapper:true, style:'font-size:0.9em' } -->
+# Defining and Using<br/>Method Parameters
 ```cs
 static void PrintSign(int number)
 {
-      if (number > 0)
-          Console.WriteLine("Positive");
-      else if (number < 0)
-          Console.WriteLine("Negative");
-      else
-          Console.WriteLine("Zero");
+    if (number > 0)
+      { Console.WriteLine("Positive"); }
+    else if (number < 0)
+      { Console.WriteLine("Negative"); }
+    else
+      { Console.WriteLine("Zero"); }
 }
 ```
 - Method’s behavior depends on its parameters
@@ -215,18 +213,17 @@ static void PrintSign(int number)
 
 
 
-
-<!-- attr: {  showInPresentation:true, hasScriptWrapper:true } -->
-<!-- # Defining and Using Method Parameters -->
+<!-- attr: {  showInPresentation:true, hasScriptWrapper:true, style:'font-size:0.9em' } -->
+<!-- # Defining and Using<br/>Method Parameters -->
 - Methods can have as many parameters as needed:
 
 ```cs
 static void PrintMax(float number1, float number2)
 {
-      float max = number1;
-      if (number2 > number1)
-          max = number2;
-      Console.WriteLine("Maximal number: {0}", max);
+    float max = number1;
+    if (number2 > number1)
+        max = number2;
+    Console.WriteLine("Maximal number: {0}", max);
 }
 ```
 - The following syntax is not valid:
@@ -256,11 +253,10 @@ PrintMax(oldQuantity * 1.5, quantity * 2);
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # Calling Methods with Parameters
-- Expressions must be of the same type as method’s parameters (or compatible)
+- Expressions must be of the **same type** as method’s parameters (or compatible)
   - If the method requires a `float` expression, you can pass `int` instead
-- Use the same order like in method declaration
+- Use the **same order** like in method declaration
 - For methods with no parameters do not forget the parentheses
-
 
 
 
@@ -270,31 +266,29 @@ PrintMax(oldQuantity * 1.5, quantity * 2);
 ## Examples -->
 
 
-
-<!-- attr: {  showInPresentation:true, hasScriptWrapper:true } -->
+<!-- attr: {  showInPresentation:true, hasScriptWrapper:true, style:'font-size:0.9em' } -->
 <!-- # Methods Parameters – _Example_ -->
 
 ```cs
 static void PrintSign(int number)
 {
   if (number > 0)
-    Console.WriteLine("The number {0} is positive.", number);
+    {  Console.WriteLine("The number {0} is positive.", number); }
   else if (number < 0)
-    Console.WriteLine("The number {0} is negative.", number);
+    { Console.WriteLine("The number {0} is negative.", number); }
   else
-    Console.WriteLine("The number {0} is zero.", number);
+    { Console.WriteLine("The number {0} is zero.", number); }
 }
+
 static void PrintMax(float number1, float number2)
 {
   float max = number1;
   if (number2 > number1)
-  {
-    max = number2;
-  }
+    { max = number2; }
+  
   Console.WriteLine("Maximal number: {0}", max);
 }
 ```
-
 
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
@@ -308,48 +302,43 @@ static void PrintMax(float number1, float number2)
 - Display the period between two months in a user-friendly way
 
 ```cs
-using System;
-
-class MonthsExample
+static void SayMonth(int month)
 {
-  static void SayMonth(int month)
-  {
-    string[] monthNames = new string[] {
-      "January", "February", "March",
-      "April", "May", "June", "July",
-      "August", "September", "October",
-      "November", "December"};
-      Console.Write(monthNames[month-1]);
-  }
+  string[] monthNames = new string[] {
+    "January", "February", "March",
+    "April", "May", "June", "July",
+    "August", "September", "October",
+    "November", "December" };
 
+  Console.Write(monthNames[month-1]);
+}
 ```
 
-_(the example continues)_
 
 <!-- attr: {  showInPresentation:true, hasScriptWrapper:true } -->
 # Months – _Example_
 
 ```cs
-  static void SayPeriod(int startMonth, int endMonth)
+static void SayPeriod(int startMonth, int endMonth)
+{
+  int period = endMonth - startMonth;
+  if (period < 0)
   {
-    int period = endMonth - startMonth;
-    if (period < 0)
-    {
-      period = period + 12;
-      // From December to January the
-      // period is 1 month, not -11!
-    }
-    Console.Write("There are {0} + months from ", period);
-    SayMonth(startMonth);
-    Console.Write(" to ");
-    SayMonth(endMonth);
+    period = period + 12;
+    // From December to January the
+    // period is 1 month, not -11!
   }
+
+  Console.Write("There are {0} + months from ", period);
+  SayMonth(startMonth);
+  Console.Write(" to ");
+  SayMonth(endMonth);
 }
 ```
 
 
 
-<!-- attr: {  class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'font-size: 42px' } -->
+<!-- attr: {  class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Months
 ## [Demo](https://github.com/TelerikAcademy/CSharp-Part-2/tree/master/Topics/03.%20Methods/demos/Months) -->
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic22.png" style="top:52%; left:34.5%; width:30%;border-radius:10px; border:2px solid white; z-index:-1" /> -->
@@ -386,25 +375,25 @@ static void PrintLine(int start, int end)
 ```
 
 
-
 <!-- attr: {  class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Printing Triangle
-## [Demo](https://github.com/TelerikAcademy/CSharp-Part-2/tree/master/Topics/03.%20Methods/demos/Triangle) -->
+## [Demo](./demos/Triangle) -->
+
 
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic23.png" style="top:55%; left:65%; width:26.5%; z-index:-1" />
 <img showInPresentation="true" class="slide-image" src="imgs/pic24.png" style="top:55%; left:10%; width:35.63%; z-index:-1" /> -->
 
 
-<!-- attr: {  showInPresentation:true, hasScriptWrapper:true } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size:0.9em' } -->
 # Optional Parameters
 - C# supports **optional parameters** since v4.0 with default values assigned at their declaration:
 ```cs
 static void PrintNumbers(int start = 0, int end = 100)
 {
-      for (int i = start; i <= end; i++)
-      {
-            Console.Write("{0} ", i);
-      }
+    for (int i = start; i <= end; i++)
+    {
+        Console.Write("{0} ", i);
+    }
 }
 ```
 - The above method can be called in several ways:
@@ -417,7 +406,7 @@ PrintNumbers(end: 40, start: 35);
 
 <!-- attr: {  class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Optional Parameters
-## [Demo](https://github.com/TelerikAcademy/CSharp-Part-2/tree/master/Topics/03.%20Methods/demos/OptionalParameters) -->
+## [Demo](./demos/OptionalParameters) -->
 
 
 <!-- section start -->
@@ -426,10 +415,9 @@ PrintNumbers(end: 40, start: 35);
 <img class="slide-image" showInPresentation="true" src="imgs/pic26.png" style="top:44.08%; left:30%; width:40%;border-radius:10px; border:2px solid white; z-index:-1" /> -->
 
 
-<!-- attr: { id:'return', showInPresentation:true, hasScriptWrapper:true } -->
-# <a id="return"></a> Returning Values From Methods
+<!-- attr: { id:'return', showInPresentation:true, hasScriptWrapper:true, style:'font-size:0.85em' } -->
+# Returning Values<br/>From Methods
 - A method can `return` a value to its caller
-- Returned value:
   - Can be assigned to a variable:
 
   ```cs
@@ -452,13 +440,14 @@ PrintNumbers(end: 40, start: 35);
 <!-- attr: {  showInPresentation:true, hasScriptWrapper:true, style:'font-size:0.85em' } -->
 # Defining Methods<br/>That Return a Value
 - Instead of `void`, specify the type of data to return
+
 ```cs
 static int Multiply(int firstNum, int secondNum)
 {
     return firstNum * secondNum;
 }
 ```
-- Methods can return any type of data (`int`, `string`, array, etc.)
+- Methods can return any type of data (`int`, `string`, etc.)
 - `void` methods do not return anything
 - The combination of method's name and parameters is called **method signature**
 - Use `return` keyword to return a result
@@ -471,12 +460,12 @@ static int Multiply(int firstNum, int secondNum)
   - Returns specified expression to the caller
   - _Example_:
 
-    ```cs
-    int SomeMethod()
-    {
-        return -1; // optional before and after the return statement
-    }
-    ```
+```cs
+int SomeMethod()
+{
+    return -1; // optional before and after the return statement
+}
+```
 - To terminate `void` method, use just:
 
 ```cs
@@ -490,13 +479,13 @@ void SomeVoidMethod()
 
 
 <!-- section start -->
-<!-- attr: {  class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'font-size: 42px' } -->
+<!-- attr: {  class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Returning Values From Methods
  ## _Examples_ -->
 
 
-<!-- attr: {  showInPresentation:true, hasScriptWrapper:true, style:'font-size: 42px' } -->
-# Temperature Conversion – _Example_
+<!-- attr: {  showInPresentation:true, hasScriptWrapper:true } -->
+# Temperature Conversion<br/>_Example_
 - Convert temperature from Fahrenheit to Celsius:
 
 ```cs
@@ -517,17 +506,17 @@ static void Main()
 
 
 
-<!-- attr: {  class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'font-size: 42px' } -->
+<!-- attr: {  class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Temperature Conversion
-## [Demo](https://github.com/TelerikAcademy/CSharp-Part-2/tree/master/Topics/03.%20Methods/demos/Temperature) -->
+## [Demo](./demos/Temperature) -->
 
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic29.png" style="top:55%; left:75.44%; width:18%; z-index:-1" /
 <img showInPresentation="true" class="slide-image" src="imgs/pic30.png" style="top:55%; left:13.15%; width:15%; z-index:-1" />
 <img showInPresentation="true" class="slide-image" src="imgs/pic31.png" style="top:60%; left:43.75%; width:18%; z-index:-1" /> -->
 
 
-<!-- attr: {  showInPresentation:true, hasScriptWrapper:true, style:'font-size: 42px' } -->
-# Positive Numbers – _Example_
+<!-- attr: {  showInPresentation:true, hasScriptWrapper:true } -->
+# Positive Numbers<br/>_Example_
 - Check if all numbers in a sequence are positive:
 
 ```cs
@@ -545,14 +534,14 @@ static bool ArePositive(int[] sequence)
 ```
 
 
-<!-- attr: {  class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'font-size: 42px' } -->
+<!-- attr: {  class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Positive Numbers
-## [Demo](https://github.com/TelerikAcademy/CSharp-Part-2/tree/master/Topics/03.%20Methods/demos/PositiveNumbers) -->
+## [Demo](./demos/PositiveNumbers) -->
 
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic33.png" style="top:55%; left:32.5%; width:35%; border-radius:10px; border:2px solid white; z-index:-1" /> -->
 
 
-<!-- attr: {  showInPresentation:true, hasScriptWrapper:true, style:'font-size: 42px' } -->
+<!-- attr: {  showInPresentation:true, hasScriptWrapper:true } -->
 # Data Validation – _Example_
 
 - Validating input data:
@@ -576,16 +565,15 @@ class ValidatingDemo
 _(example continues)_
 
 
-<!-- attr: {  showInPresentation:true, hasScriptWrapper:true, style:'font-size: 42px' } -->
+<!-- attr: {  showInPresentation:true, hasScriptWrapper:true } -->
 # Data Validation – _Example_
 
 ```cs
-    bool isValidTime =
-      ValidateHours(hours) &&
-      ValidateMinutes(minutes);
+    bool isValidTime = ValidateHours(hours) &&
+                       ValidateMinutes(minutes);
+
     if (isValidTime)
-      Console.WriteLine("It is {0}:{1}",
-        hours, minutes);
+      Console.WriteLine("It is {0}:{1}", hours, minutes);
     else
       Console.WriteLine("Incorrect time!");
   }
@@ -620,17 +608,19 @@ _(example continues)_
 <!-- attr: {  showInPresentation:true, hasScriptWrapper:true, style:'font-size: 42px' } -->
 # Overloading Methods
 - What means "to **overload** a method name"?
-  - Use the same method name for multiple methods with different **signature** (parameters)
+  - Use the same method name for multiple methods with **different signature** (parameters)
 
 ```cs
 static void Print(string text)
 {
   Console.WriteLine(text);
 }
+
 static void Print(int number)
 {
   Console.WriteLine(number);
 }
+
 static void Print(string text, int number)
 {
   Console.WriteLine(text + ' ' + number);
@@ -647,7 +637,7 @@ static void Print(string text, int number)
 
 
 <!-- attr: {  showInPresentation:true, hasScriptWrapper:true, style:'font-size: 42px' } -->
-# Variable Number of Parameters
+# Variable Number of<br/>Parameters
 - A method in C# can take variable number of parameters by specifying the `params` keyword
 
 ```cs
@@ -668,19 +658,19 @@ static void Main()
 ```
 
 
-
+<!-- section start -->
 <!-- attr: { id:'best',  showInPresentation:true, hasScriptWrapper:true, style:'font-size: 42px' } -->
 # Methods – Best Practices
-- Each method should perform a single, well-defined task
-- Method’s name should describe that task in a clear and non-ambiguous way
-  - Good examples: **CalculatePrice**, **ReadName**
-  - Bad examples: **f**, **g1**, **Process**
-  - In C# methods should start with capital letter
+- Each method should perform a **single**, **well-defined** task
+- Method’s name should **describe that task** in a clear and non-ambiguous way
+  - Good examples: `CalculatePrice`, `ReadName`
+  - Bad examples: `f`, `g1`, `Process`
+- In C# methods should start with capital letter
+  - So called **Pascal case**
 - Avoid methods longer than one screen
   - Split them to several shorter methods
 
 
-<!-- section start -->
 <!-- attr: {  showInPresentation:true, hasScriptWrapper:true, style:'font-size: 42px' } -->
 # Summary
 - Break large programs into simple methods that solve small sub-problems
