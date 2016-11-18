@@ -82,18 +82,19 @@
 <p style="font-size: 46px; color: orange; position: absolute; top: 35%; left: 50%;">500<sub>d</sub> = 111110100<sub>b</sub></p>
 
 
-<!-- attr: { id:'hexadecimal',  showInPresentation:true, hasScriptWrapper:true, style:'font-size:0.9em' } -->
+<!-- attr: { id:'hexadecimal',  showInPresentation:true, hasScriptWrapper:true, style:'font-size:0.8em' } -->
 # Hexadecimal Numbers
 - Hexadecimal numbers (base 16)
-  - Represented using 16 numerals: `0`, `1`, `2`, ... `9`, `A`, `B`, `C`, `D`, `E` and `F`
-- Usually prefixed with `0x`
+  - Represented using 16 numerals: `0`, `1`, ... `9`, `A`, `B`, `C`, `D`, `E` and `F`
+  - Usually prefixed with `0x`
+- Hex digits value:
 
-| **Hex digits value** |               |              |               |
-|:--------------------:|:-------------:|:------------:|:-------------:|
-| 0 &rarr; 0x0         | 8 &rarr; 0x8  | 4 &rarr; 0x4 | 12 &rarr; 0xC |
-| 1 &rarr; 0x1         | 9 &rarr; 0x9  | 5 &rarr; 0x5 | 13 &rarr; 0xD |
-| 2 &rarr; 0x2         | 10 &rarr; 0xA | 6 &rarr; 0x6 | 14 &rarr; 0xE |
-| 3 &rarr; 0x3         | 11 &rarr; 0xB | 7 &rarr; 0x7 | 15 &rarr; 0xF |
+| 0 - 3                |  4 - 7       |  8 - 11       |  12 - 15      |
+|:--------------------:|:------------:|:-------------:|:-------------:|
+| 0 &rarr; 0x0         | 4 &rarr; 0x4 | 8 &rarr; 0x8  | 12 &rarr; 0xC |
+| 1 &rarr; 0x1         | 5 &rarr; 0x5 | 9 &rarr; 0x9  | 13 &rarr; 0xD |
+| 2 &rarr; 0x2         | 6 &rarr; 0x6 | 10 &rarr; 0xA | 14 &rarr; 0xE |
+| 3 &rarr; 0x3         | 7 &rarr; 0x7 | 11 &rarr; 0xB | 15 &rarr; 0xF |
 
 
 <!-- attr: {  showInPresentation:true, hasScriptWrapper:true } -->
@@ -150,7 +151,7 @@
 
 <!-- attr: { id:'positivenegative',  showInPresentation:true, hasScriptWrapper:true } -->
 # Positive and<br/>Negative Numbers
-- A number's sign is determined by the`Most Significant Bit` (MSB)
+- A number's sign is determined by the **Most Significant Bit** (MSB)
   - Only in signed integers: `sbyte`, `short`, `int`, `long`
   - Leading `0` means positive number
     - Leading `1` means negative number
@@ -178,12 +179,13 @@
   - Their value is the decimal of their last 7 bits (XXXXXXX)
 - Negative 8-bit numbers have the format <!-- .element: class="" style="width: 70%" --> **1** YYYYYYY
   - Their value is 128 (2<sup>7</sup>) minus (-) the decimal of YYYYYYY
-  - 10010010<sub>b</sub> = 2<sup>7</sup> – 10010<sub>b</sub> = 128 - 18 = -110
+  - 10010010<sub>b</sub> = 2<sup>7</sup> – 10010<sub>b</sub> =<br/> 128 - 18 = -110
 
 <!-- <img class="slide-image" showInPresentation="true"  src="imgs/table.png" style="top:10%; left:70%; width:30%; z-index:-1" /> -->
 
 <!-- attr: { id:'floats',  showInPresentation:true, hasScriptWrapper:true, style:'font-size:0.85em' } -->
 # Floating-Point Numbers
+
 - Floating-point numbers representation (according to the IEEE 754 standard*):
 <br/>
 <br/>
