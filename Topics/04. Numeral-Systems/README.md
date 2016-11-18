@@ -82,18 +82,18 @@
 <p style="font-size: 46px; color: orange; position: absolute; top: 35%; left: 50%;">500<sub>d</sub> = 111110100<sub>b</sub></p>
 
 
-<!-- attr: { id:'hexadecimal',  showInPresentation:true, hasScriptWrapper:true, style:'font-size:0.9em' } -->
+<!-- attr: { id:'hexadecimal',  showInPresentation:true, hasScriptWrapper:true, style:'font-size:0.8em' } -->
 # Hexadecimal Numbers
 - Hexadecimal numbers (base 16)
   - Represented using 16 numerals: `0`, `1`, `2`, ... `9`, `A`, `B`, `C`, `D`, `E` and `F`
 - Usually prefixed with `0x`
-
-| **Hex digits value** |               |              |               |
-|:--------------------:|:-------------:|:------------:|:-------------:|
-| 0 &rarr; 0x0         | 8 &rarr; 0x8  | 4 &rarr; 0x4 | 12 &rarr; 0xC |
-| 1 &rarr; 0x1         | 9 &rarr; 0x9  | 5 &rarr; 0x5 | 13 &rarr; 0xD |
-| 2 &rarr; 0x2         | 10 &rarr; 0xA | 6 &rarr; 0x6 | 14 &rarr; 0xE |
-| 3 &rarr; 0x3         | 11 &rarr; 0xB | 7 &rarr; 0x7 | 15 &rarr; 0xF |
+  - **Hex digits value**
+|                      |              |               |               |
+|:--------------------:|:------------:|:-------------:|:-------------:|
+| 0 &rarr; 0x0         | 4 &rarr; 0x4 | 8 &rarr; 0x8  | 12 &rarr; 0xC |
+| 1 &rarr; 0x1         | 5 &rarr; 0x5 | 9 &rarr; 0x9  | 13 &rarr; 0xD |
+| 2 &rarr; 0x2         | 6 &rarr; 0x6 | 10 &rarr; 0xA | 14 &rarr; 0xE |
+| 3 &rarr; 0x3         | 7 &rarr; 0x7 | 11 &rarr; 0xB | 15 &rarr; 0xF |
 
 
 <!-- attr: {  showInPresentation:true, hasScriptWrapper:true } -->
