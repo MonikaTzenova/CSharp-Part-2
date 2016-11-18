@@ -88,7 +88,7 @@
   - Represented using 16 numerals: `0`, `1`, `2`, ... `9`, `A`, `B`, `C`, `D`, `E` and `F`
 - Usually prefixed with `0x`
   - **Hex digits value**
-  
+
 |        &nbsp         |  &nbsp       |  &nbsp        |  &nbsp        |
 |:--------------------:|:------------:|:-------------:|:-------------:|
 | 0 &rarr; 0x0         | 4 &rarr; 0x4 | 8 &rarr; 0x8  | 12 &rarr; 0xC |
