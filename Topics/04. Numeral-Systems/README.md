@@ -89,7 +89,7 @@
 - Usually prefixed with `0x`
   - **Hex digits value**
 
-|        &nbsp         |  &nbsp       |  &nbsp        |  &nbsp        |
+| &nbsp                |  &nbsp       |  &nbsp        |  &nbsp        |
 |:--------------------:|:------------:|:-------------:|:-------------:|
 | 0 &rarr; 0x0         | 4 &rarr; 0x4 | 8 &rarr; 0x8  | 12 &rarr; 0xC |
 | 1 &rarr; 0x1         | 5 &rarr; 0x5 | 9 &rarr; 0x9  | 13 &rarr; 0xD |
