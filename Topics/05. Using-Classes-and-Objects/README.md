@@ -522,7 +522,7 @@ Console.WriteLine(
 
 
 
-<!-- section  start -->
+<!-- section start -->
 <!-- attr: { id:'constructor', class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
 # Constructors
 
