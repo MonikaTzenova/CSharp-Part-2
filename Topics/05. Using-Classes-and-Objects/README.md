@@ -23,12 +23,11 @@
   - [Instance and Static Methods](#instancestatic)
   - [Constructors](#constructor)
 - [Enumerations](#enumeration)
+- [Value and Reference Types](#value-reference-types)
 
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic03.png" style="top:13.22%; left:85.50%; width:18.18%; z-index:-1; border-radius: 15px" /> -->
 
 
-
-<!-- section start -->
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Table of Contents -->
 - [Structures](#structure)
@@ -173,6 +172,50 @@ peterAccount
 +Owner="Peter Kirov"
 +Ammount=1825.33
 ```
+
+
+
+<!-- section start -->
+<!-- attr: { id:'value-reference-types', class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
+# Value and Reference Types
+
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 40px;' } -->
+<!-- # Value and Reference Types -->
+- In programming there are two categories of types
+  - **Value** **types**
+  - **Reference types**
+- Placed in different areas of memory
+  - Value types live in the **execution stack***
+    - Freed when become out of scope
+  - Reference types live in the **managed heap**(dynamic memory)
+    - Freed by the **garbage collector**
+- _Note_: this does not mean that value types, which are part of reference types live on the stack. E.g., integers in a `List<int>` do not live on the stack
+
+
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # Value and Reference Types<br/>_Examples_ -->
+
+- **Value** types
+  - Most of the primitive types
+  - Structures
+    - _Examples_: `int`, `float`, `bool`, `DateTime`
+- **Reference** types
+  - Classes and Interfaces
+  - Strings
+  - Arrays
+    - _Examples_: `string`,`Random`,`object`,`int[]`
+
+
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # Value and Reference Types -->
+
+```cs
+int intNum = 5;
+DateTime date = DateTime.Now;
+int[] intArr = new int[] { 5, 6, 7 };
+string str = "telerik";
+```
+<img class="slide-image" src="imgs/values.png" style="top:35%; left:14.83%; width:76.91%; z-index:-1" />
 
 
 
@@ -477,8 +520,15 @@ Console.WriteLine(
 <!-- # Calling Static Methods
 ## [Demo](./demos/StaticMethods) -->
 
-<!-- attr: { id:'constructor', class:'', showInPresentation:true, hasScriptWrapper:true } -->
+
+
+<!-- section  start -->
+<!-- attr: { id:'constructor', class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
 # Constructors
+
+
+<!-- attr: { class:'', showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # Constructors -->
 - `Constructors` are special methods used to **assign initial values of the fields** in an object
   - Executed when an object of a given type is being created
   - Have the same name as the class that holds them
@@ -567,8 +617,7 @@ using System;
 DateTime halloween = new DateTime(2009, 10, 31);
 Console.WriteLine(halloween);
 
-DateTime julyMorning =
-  new DateTime(2009, 7, 1, 5, 52, 0);
+DateTime julyMorning = new DateTime(2009, 7, 1, 5, 52, 0);
 Console.WriteLine(julyMorning);
 ```
 
@@ -629,6 +678,64 @@ color = 5; // Compilation error!
 - _Example_ of structure
   - `System.DateTime` – represents a date and time
 
+<!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # Structures
+## [Demo](./demos) -->
+
+
+
+<!-- section start -->
+<!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # .NET Common Type System
+## Brief Introduction -->
+
+
+<!-- attr: { id:'cts', showInPresentation:true, hasScriptWrapper:true } -->
+# Common Type System (CTS)
+- `CTS` defines all **data types** supported in .NET Framework
+  - Primitive types (e.g. `int`, `float`, `object`)
+  - Classes (e.g. `String`, `Console`, `Array`)
+  - Structures (e.g. `DateTime`)
+  - Arrays (e.g. `int[]`, `string[,]`)
+  - Etc.
+- Object-oriented by design
+
+
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 40px;' } -->
+# CTS and Different Languages
+- `CTS` is common for all .NET languages
+  - C#, F#, VB.NET, J#, JScript.NET, ...
+- `CTS` type mappings:
+
+| `CTS Type`       | `C# Type` | `VB.NET Type` |
+|:---------------|:--------|:------------|
+| System.Int32   | int     | Integer     |
+| System.Single  | float   | Single      |
+| System.Boolean | bool    | Boolean     |
+| System.String  | string  | String      |
+| System.Object  | object  | Object      |
+
+
+
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.9em' } -->
+# System.Object: CTS Base Type
+- `System.Object` (`object` in C#) is a base type for all other types in `CTS`
+  - Can hold values of any other type:
+
+```cs
+string s = "test";
+object obj = s;
+```
+
+- All .NET types derive common methods from `System.Object`, e.g. `ToString()`
+
+```cs
+DateTime now = DateTime.Now;
+string nowInWords = now.ToString();
+Console.WriteLine(nowInWords);
+```
+
+
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
@@ -657,9 +764,6 @@ color = 5; // Compilation error!
 - _Example_:
   - `Array` class, defined in the `System` namespace
   - The full name of the class is `System.Array`
-
-
-
 
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.9em' } -->
@@ -815,101 +919,13 @@ static char GenerateChar(string availableChars)
 }
 ```
 
+
+
 <!-- section start -->
-<!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
-<!-- # .NET Common Type System
-## Brief Introduction -->
-
-
-<!-- attr: { id:'cts', showInPresentation:true, hasScriptWrapper:true } -->
-# Common Type System (CTS)
-- `CTS` defines all **data types** supported in .NET Framework
-  - Primitive types (e.g. `int`, `float`, `object`)
-  - Classes (e.g. `String`, `Console`, `Array`)
-  - Structures (e.g. `DateTime`)
-  - Arrays (e.g. `int[]`, `string[,]`)
-  - Etc.
-- Object-oriented by design
-
-
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 40px;' } -->
-# CTS and Different Languages
-- `CTS` is common for all .NET languages
-  - C#, F#, VB.NET, J#, JScript.NET, ...
-- `CTS` type mappings:
-
-| `CTS Type`       | `C# Type` | `VB.NET Type` |
-|:---------------|:--------|:------------|
-| System.Int32   | int     | Integer     |
-| System.Single  | float   | Single      |
-| System.Boolean | bool    | Boolean     |
-| System.String  | string  | String      |
-| System.Object  | object  | Object      |
-
-
-
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.9em' } -->
-# System.Object: CTS Base Type
-- `System.Object` (`object` in C#) is a base type for all other types in `CTS`
-  - Can hold values of any other type:
-
-```cs
-string s = "test";
-object obj = s;
-```
-
-- All .NET types derive common methods from `System.Object`, e.g. `ToString()`
-
-```cs
-DateTime now = DateTime.Now;
-string nowInWords = now.ToString();
-Console.WriteLine(nowInWords);
-```
-
-
-
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 40px;' } -->
-# Value and Reference Types
-- In CTS there are two categories of types
-  - **Value** **types**
-  - **Reference types**
-- Placed in different areas of memory
-  - Value types live in the **execution stack***
-    - Freed when become out of scope
-  - Reference types live in the **managed heap**(dynamic memory)
-    - Freed by the **garbage collector**
-- _Note_: this does not mean that value types, which are part of reference types live on the stack. E.g., integers in a `List<int>` do not live on the stack
-
-
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
-# Value and Reference Types<br/>_Examples_
-
-- **Value** types
-  - Most of the primitive types
-  - Structures
-  - _Examples_: `int`, `float`, `bool`, `DateTime`
-- **Reference** types
-  - Classes and interfaces
-  - Strings
-  - Arrays
-  - _Examples_: `string`,`Random`,`object`,`int[]`
-
-
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
-# Value and Reference Types
-
-```cs
-int intNum = 5;
-DateTime date = DateTime.Now;
-int[] intArr = new int[] { 5, 6, 7 };
-string str = "telerik";
-```
-<img class="slide-image" src="imgs/values.png" style="top:35%; left:14.83%; width:76.91%; z-index:-1" />
-
-
-
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # Summary
+- Two types of objects
+  - **Value** and **Reference** Types
 - `Classes` provide the **template** for objects
 - `Objects` are **instances of classes**
 - `Classes` have **different members**
@@ -918,12 +934,12 @@ string str = "telerik";
   - Members can be accessed
   - Methods can be called
 - `Structures` are used for **storing data**
-- Namespaces group related classes
 
 
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Summary -->
+- Namespaces group related classes
 - Namespaces help organizing the classes
 - **Common Type System** (CTS) defines the types for all .NET languages
   - **Value** types
