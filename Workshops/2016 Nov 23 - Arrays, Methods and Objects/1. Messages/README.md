@@ -4,7 +4,7 @@
 
 # Task 1: Messages
 
-## BGCoder: [http://bgcoder.com/Contests/354/CSharp-Advanced-2016-2017-31-May-2016-Evening](http://bgcoder.com/Contests/354/CSharp-Advanced-2016-2017-31-May-2016-Evening)
+## Submit your solution [here](http://bgcoder.com/Contests/354/CSharp-Advanced-2016-2017-31-May-2016-Evening)
 
 ## Description
 
