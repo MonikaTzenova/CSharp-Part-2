@@ -13,11 +13,11 @@ You are given rectangular matrix. The matrix is filled with numbers that are pow
 -	The next cell above holds value of 2, the next cell above holds of 4, etc…
 -	The second cell the bottom row holds a value of 2, the cell next to it holds a value of 4
 
-<img src="./imgs/matrix.jpg" style="width:30%" />
+<img src="./imgs/matrix.jpg" style="width:30%;" />
 
 You have a pawn on the field. The pawn can only move to the cells that directly above, below it or right/left of it. We have four directions UP, DOWN, LEFT, RIGHT.
 
-<img src="./imgs/moves.jpg" style="width:5%" />
+<img src="./imgs/moves.jpg" style="width:5%;" />
 
 Given that initially the pawn starts at the bottom left corner and a list of cells that the pawn must reach calculate the sum of the cells that the pawn has to go through.
 The value of each cell is calculated only once, i.e. if the pawn visits the same cell more than once, its value is added to the result only the first time (the value is collected).
@@ -28,18 +28,18 @@ The pawn goes from one cell to the other, following the rules:
 
 ## Example:
 
-<img src="./imgs/example.jpg" style="width:20%" />
+<img src="./imgs/example.jpg" style="width:20%;" />
 
 The pawn collects values: 1, 2, 4, 8, 16, 32, 16, 8, 4, 8, 16, 32, 64, 128, 256 and 512. Their sum is 1107.
 
 ## Input
 - The input data is given at the standard input, i.e. the console
-- On the first and the second lines you will find the dimensions of the field R and C
-- On the third line you will find the number N, the number of moves
-- On the fourth line you will find the CODEs, decimal numbers that represents the positions from the path of the pawn. They will be separated by a single space. The position is encoded as follows:
-  -	A coefficient is calculated, COEFF = MAX(R, C)
-  -	ROW = CODE / COEF
-  -	COL = CODE % COEF
+- On the first and the second lines you will find the **dimensions of the field R and C**
+- On the third line you will find the number **N, the number of moves**
+- On the fourth line you will find the **CODEs, decimal numbers** that represents the **positions from the path of the pawn**. They will be separated by a single space. The position is encoded as follows:
+  -	A coefficient is calculated, **COEFF = MAX(R, C)**
+  -	**ROW = CODE / COEF**
+  -	**COL = CODE % COEF**
 - The input will be valid, in the specified format, within the constraints given below. There is no need to check the input data explicitly.
 
 
