@@ -13,12 +13,11 @@ You are given rectangular matrix. The matrix is filled with numbers that are pow
 -	The next cell above holds value of 2, the next cell above holds of 4, etc…
 -	The second cell the bottom row holds a value of 2, the cell next to it holds a value of 4
 
-
-<img src="./imgs/matrix.jpg" style="width:20%" />
+<img src="./imgs/matrix.jpg" style="width:30%" />
 
 You have a pawn on the field. The pawn can only move to the cells that directly above, below it or right/left of it. We have four directions UP, DOWN, LEFT, RIGHT.
 
-<img src="./imgs/moves.jpg" style="width:20%" />
+<img src="./imgs/moves.jpg" style="width:5%" />
 
 Given that initially the pawn starts at the bottom left corner and a list of cells that the pawn must reach calculate the sum of the cells that the pawn has to go through.
 The value of each cell is calculated only once, i.e. if the pawn visits the same cell more than once, its value is added to the result only the first time (the value is collected).
