@@ -20,7 +20,7 @@ Additionally, since the **usual suspects** need to see if you keep track of the 
 Each hand will be given to you as an **64-bit integer**(signed or unsigned makes no difference, only the bits are important). The set bits(i.e. 1's) in such a number represent which cards are present. 
 The positions of the bits are **counted from right to left**. If a bit at position **K** is set, then the card at position **K** is present in the hand.
 
-- The card signs are marked as letters (for output convinience)
+- The card signs are marked as letters (for output convenience)
 
 | clubs ♣ | diamonds ♦ | hearts ♥ | spades ♠ |
 |:-------:|:----------:|:--------:|:--------:|
@@ -50,7 +50,7 @@ The positions of the bits are **counted from right to left**. If a bit at positi
 
 ## Output
 - The output consists of **2** lines .
-    - If you can form at least one whole deck of 52 cards from the hands, print "Full deck" on the first line. Othewise, print "Wa wa!".
+    - If you can form at least one whole deck of 52 cards from the hands, print "Full deck" on the first line. Otherwise, print "Wa wa!".
     - On the second line, print all cards that occurred an even number of times, in ascending order, separated by a whitespace " ". Look at the examples to get a better idea of how the output should look like.
 
 ## Constraints

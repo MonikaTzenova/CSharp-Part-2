@@ -43,7 +43,7 @@ Thankfully, the **FBI** also provided you with some additional information about
 
 ## Hints
 - **Use only if you're stuck :)**
-- The **FBI** figured that their task is a bit hard, so they left you a hint - an array of ASCII character codes in the **base 7** numeral system. If you turn the numbers from **base 7** to **base 10**, take the corresponding ASCII symbols and concatanate them, you get to see the hint :)
+- The **FBI** figured that their task is a bit hard, so they left you a hint - an array of ASCII character codes in the **base 7** numeral system. If you turn the numbers from **base 7** to **base 10**, take the corresponding ASCII symbols and concatenate them, you get to see the hint :)
 
 ```csharp
 var hint = new string[]{

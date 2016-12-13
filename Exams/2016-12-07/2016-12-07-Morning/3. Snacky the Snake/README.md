@@ -13,7 +13,7 @@ The den is represented by a two dimensional array of symbols. Possible symbols a
 - `s` - represents the entrance of the den (starting point).
 The first line will be filled with the symbol **#** (rocks) and **only one** symbol will be **s** (entrance)
 
-_Example imput:_
+_Example input:_
 ```
 5x8
 ####s###
@@ -82,12 +82,12 @@ Snacky will get out with length 3
 - Moves **l**eft to [1,3]
 - Moves **l**eft to [1,2]
 - Moves **d**own to [2,2] and consumes the food, so he gains +1 to length (length = 5)
-- Moves **d**own to [3,2] and looses 1 from length because this is the 5th move (length = 4)
+- Moves **d**own to [3,2] and loses 1 from length because this is the 5th move (length = 4)
 - Moves **r**ight to [3,3]
 - Moves **r**ight to [3,4]
 - Moves **u**p to [2,4]
 - Moves **u**p to [1,4]
-- Moves **u**p to [0,4], looses 1 from length because this is the 10th move and gets out with length 3
+- Moves **u**p to [0,4], loses 1 from length because this is the 10th move and gets out with length 3
 
 ## Sample tests 2
 #### input
@@ -174,12 +174,12 @@ Snacky will get out with length 4
 - Moves **l**eft to [1,3]
 - Moves **l**eft to [1,2]
 - Moves **d**own to [2,2] and consumes the food, so he gains +1 to length
-- Moves **l**eft to [2,1] and looses 1 from length because this is the 5th move (length = 4)
+- Moves **l**eft to [2,1] and loses 1 from length because this is the 5th move (length = 4)
 - Moves **l**eft to [2,0]
 - Moves **l**eft to [2,7]
 - Moves **d**own to [3,7]
 - Moves **l**eft to [3,6]
-- Moves **l**eft to [3,5] and consumes the food, so he gains +1 to length (length = 5), but also looses 1 from length because this is the 10th move (length = 4)
+- Moves **l**eft to [3,5] and consumes the food, so he gains +1 to length (length = 5), but also loses 1 from length because this is the 10th move (length = 4)
 - Moves **l**eft to [3,4]
 - Moves **u**p to [2,4]
 - Moves **u**p to [1,4]

@@ -89,10 +89,10 @@ s,a,a,s,s,d,d,w,w,w
 
 <p>Then Sneaky will give you a rout to test separated with commas <code>,</code>. The directions are: <strong>s</strong> - down, <strong>w</strong> - up, <strong>a</strong> - left, <strong>d</strong> - right</p>
 
-<p>There are a few other things you should have in mind:</p>
+<p>There are a few other <strong>IMPORTANT</strong> things you should have in mind:</p>
 
 <ul>
-<li>Sneaky needs to enter and exit from the same spot (entrance) otherwise he will <strong>remain in the den</strong>.</li>
+<li>Sneaky needs to <strong>enter and exit from the same spot</strong> (entrance) otherwise he will <strong>remain in the den</strong>.</li>
 <li>Sneaky enters the den with length <code>3</code> and for every <code>5</code> moves he makes he loses <code>1</code> of his length, but if he steals an egg <code>@</code> he gains <code>+1</code> length. If his length drops to <code>0</code> or below he will <strong>starve in the den</strong>.
 
 <ul>
@@ -118,7 +118,7 @@ s,a,a,s,s,d,d,w,w,w
 <li>
 <code>Sneaky is going to get out with length L</code> - when Sneaky successfully exits the den.</li>
 <li>
-<code>Sneaky is going to hit a rock at [R,C]</code> - when Sneaky hits a rock (<strong>#</strong>) anywhere in the den.</li>
+<code>Sneaky is going to hit a rock at [R,C]</code> - when Sneaky hits a rock (<strong>%</strong>) anywhere in the den.</li>
 <li>
 <code>Sneaky is going to be lost into the depths with length L</code> - when Sneaky moves below the provided depth <strong>R</strong>.</li>
 <li>
@@ -203,7 +203,7 @@ s,a,a,s,s,d,d,w,w,w
 <li>
 <strong>s</strong> moves down to [3,2] and looses 1 from length because this is the 5th move (length = 4)</li>
 <li>
-<strong>d</strong> moves right to [1,4]</li>
+<strong>d</strong> moves right to [3,3]</li>
 <li>
 <strong>d</strong> moves right to [3,4]</li>
 <li>
@@ -347,7 +347,7 @@ s,a,a,s,a,a,a,s,a,a,a,w,w,w
 <li>
 <strong>a</strong> moves left to [3,4]</li>
 <li>
-<strong>w</strong> moves up to [2,4] and looses 1 from length because this is the 12th move (length = 3)</li>
+<strong>w</strong> moves up to [2,4]</li>
 <li>
 <strong>w</strong> moves up to [1,4]</li>
 <li>
